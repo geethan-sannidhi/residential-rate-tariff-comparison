@@ -1,0 +1,343 @@
+<title>Florida Bill Comparison</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+/* Layout: a Power BI-style report canvas. Slicer row, four visuals in a 2x2 grid, page tabs at the bottom. */
+:root {
+  --canvas: #eef0f3;
+  --card: #ffffff;
+  --ink: #16191d;
+  --ink-2: #4b5159;
+  --ink-3: #6f767f;
+  --rule: #dde1e6;
+  --grid: #e9ecef;
+  --accent: #2a78d6;
+  --banner: #fff6db;
+  --banner-ink: #5c4400;
+  --s0: #2a78d6; --s1: #eb6834; --s2: #1baf7a; --s3: #eda100;
+  --s4: #e87ba4; --s5: #008300; --s6: #6250d6; --s7: #e34948;
+  --font: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --canvas: #121417; --card: #1c1f23; --ink: #eef0f2; --ink-2: #c4c9cf; --ink-3: #9aa1a9;
+    --rule: #30353b; --grid: #2a2e33; --accent: #3987e5; --banner: #3a2f0e; --banner-ink: #f5dc96;
+    --s0: #3987e5; --s1: #d95926; --s2: #199e70; --s3: #c98500;
+    --s4: #d55181; --s5: #008300; --s6: #9085e9; --s7: #e66767;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --canvas: #121417; --card: #1c1f23; --ink: #eef0f2; --ink-2: #c4c9cf; --ink-3: #9aa1a9;
+  --rule: #30353b; --grid: #2a2e33; --accent: #3987e5; --banner: #3a2f0e; --banner-ink: #f5dc96;
+  --s0: #3987e5; --s1: #d95926; --s2: #199e70; --s3: #c98500;
+  --s4: #d55181; --s5: #008300; --s6: #9085e9; --s7: #e66767;
+  color-scheme: dark;
+}
+body { background: var(--canvas); color: var(--ink); font-family: var(--font); }
+.wrap {
+  max-width: 1320px; margin: 0 auto;
+  padding-block: 14px 24px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid; gap: 12px;
+}
+.banner {
+  background: var(--banner); color: var(--banner-ink); border-radius: 6px;
+  padding: 8px 12px; font-size: 13px; line-height: 1.45;
+}
+.banner b { font-weight: 600; }
+header { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 16px; }
+h1 { font-size: 20px; font-weight: 600; margin: 0; text-wrap: balance; }
+.meta { font-size: 12px; color: var(--ink-3); }
+.slicers { display: flex; flex-wrap: wrap; gap: 12px; }
+.slicer {
+  background: var(--card); border: 1px solid var(--rule); border-radius: 4px;
+  padding: 8px 10px; display: grid; gap: 4px; min-width: 0; flex: 1 1 200px; max-width: 300px;
+}
+.slicer label { font-size: 11px; color: var(--ink-2); font-weight: 600; letter-spacing: .02em; }
+.slicer select {
+  font: inherit; font-size: 14px; color: var(--ink); background: var(--card);
+  border: 1px solid var(--rule); border-radius: 3px; padding: 5px 6px;
+}
+.slicer select:focus-visible, .tabs button:focus-visible, .plot:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.visual {
+  background: var(--card); border: 1px solid var(--rule); border-radius: 4px;
+  padding: 10px 12px 12px; min-width: 0; display: grid; gap: 8px; align-content: start;
+}
+.visual h2 { font-size: 13px; font-weight: 600; margin: 0; color: var(--ink); }
+.legend { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 12px; color: var(--ink-2); }
+.legend span { display: inline-flex; align-items: center; gap: 5px; }
+.legend i { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+.plot { position: relative; min-width: 0; }
+.plot svg { display: block; width: 100%; height: auto; overflow: visible; }
+.plot text { fill: var(--ink-2); font-family: var(--font); }
+.tip {
+  position: absolute; pointer-events: none; background: var(--card); color: var(--ink);
+  border: 1px solid var(--rule); border-radius: 4px; box-shadow: 0 2px 8px rgb(0 0 0 / .15);
+  padding: 6px 8px; font-size: 12px; line-height: 1.5; white-space: nowrap; z-index: 5;
+  font-variant-numeric: tabular-nums;
+}
+.tip b { font-weight: 600; }
+.tip .row { display: flex; align-items: center; gap: 6px; justify-content: space-between; }
+.tip .row span:first-child { display: inline-flex; align-items: center; gap: 5px; }
+.tip i { width: 8px; height: 8px; border-radius: 2px; display: inline-block; }
+.tablewrap { overflow-x: auto; min-width: 0; }
+table { border-collapse: collapse; width: 100%; font-size: 12.5px; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font-weight: 600; color: var(--ink-2); white-space: nowrap; }
+td.num, th.num { text-align: right; white-space: nowrap; }
+td.lowest { font-weight: 600; }
+.swatch { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 6px; vertical-align: 1px; }
+.note { font-size: 12px; color: var(--ink-3); line-height: 1.45; margin: 0; }
+.tabs {
+  display: flex; gap: 2px; border-top: 1px solid var(--rule); padding-top: 6px; flex-wrap: wrap;
+}
+.tabs button {
+  font: inherit; font-size: 13px; background: transparent; color: var(--ink-2); border: 0;
+  border-bottom: 3px solid transparent; padding: 6px 12px; cursor: pointer;
+}
+.tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); font-weight: 600; }
+.src { word-break: break-all; color: var(--ink-2); }
+@media (max-width: 860px) { .grid { grid-template-columns: minmax(0, 1fr); } .slicer { max-width: none; } }
+@media (prefers-reduced-motion: no-preference) { .bar { transition: width .2s ease; } }
+</style>
+
+<div class="wrap">
+  <div class="banner"><b>HTML preview of the Power BI report.</b> Built from the same data, pages, slicers and formulas as <code>powerbi/TariffComparison.pbip</code>, so it can be viewed without Power BI Desktop. It is not rendered by Power BI.</div>
+  <header>
+    <h1>Florida residential electric bills</h1>
+    <span class="meta">8 rate schedules &middot; rates as of Nov 4, 2026 &middot; before gross receipts tax, franchise fees and local taxes</span>
+  </header>
+
+  <section id="page-comparison" aria-label="Bill comparison">
+    <div class="wrap" style="padding:0">
+      <div class="slicers">
+        <div class="slicer"><label for="usage">Monthly usage (kWh)</label><select id="usage"></select></div>
+        <div class="slicer"><label for="month">Billing month</label><select id="month"></select></div>
+        <div class="slicer"><label for="utype">Utility type</label><select id="utype">
+          <option value="">All</option><option>Investor-owned</option><option>Municipal</option></select></div>
+      </div>
+      <div class="grid">
+        <div class="visual"><h2 id="bar-title">Monthly bill at the selected usage (before taxes and fees)</h2><div class="plot" id="bar"></div></div>
+        <div class="visual"><h2>What makes up the bill at the selected usage</h2><div class="legend" id="comp-legend"></div><div class="plot" id="comp"></div></div>
+        <div class="visual"><h2>Monthly bill by usage, 0-3,000 kWh</h2><div class="legend" id="line-legend"></div><div class="plot" id="line" tabindex="0" aria-label="Line chart; use left and right arrow keys to move along usage"></div></div>
+        <div class="visual"><h2>Detail at the selected usage</h2><div class="tablewrap"><table id="detail"></table></div></div>
+      </div>
+      <p class="note">With no billing month selected, bills are 12-month averages; this only changes Duke, whose winter rates (Dec-Feb) are higher. OUC assumes its lowest demand-level tier (peak under 8 kW).</p>
+    </div>
+  </section>
+
+  <section id="page-sources" aria-label="Sources and validation" hidden>
+    <div class="wrap" style="padding:0">
+      <div class="visual"><h2>Rate schedules and sources</h2><div class="tablewrap"><table id="sources"></table></div></div>
+      <div class="visual"><h2>Calculator vs. independently published bills (PSC and FMEA)</h2><div class="tablewrap"><table id="validation"></table></div>
+        <p class="note">Published values are before gross receipts tax and franchise fees. Duke differs only in fuel: the PSC's October table uses Duke's January-May fuel factor, while Duke's tariff sheet effective September 1, 2026 shows a lower one.</p></div>
+    </div>
+  </section>
+
+  <nav class="tabs" role="tablist" aria-label="Report pages">
+    <button role="tab" id="tab-comparison" aria-controls="page-comparison" aria-selected="true">Bill comparison</button>
+    <button role="tab" id="tab-sources" aria-controls="page-sources" aria-selected="false">Sources and validation</button>
+  </nav>
+</div>
+
+<script>
+const DATA = /*__DATA__*/null;
+const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const $ = (id) => document.getElementById(id);
+const fmt$ = (v) => "$" + v.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const col = (i) => `var(--s${i})`;
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const NS = "http://www.w3.org/2000/svg";
+const svgEl = (tag, attrs = {}, parent) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; };
+
+// ---- state (mirrors the Power BI slicers) --------------------------------------------------
+const state = { kwh: 1000, month: null, type: "" };
+DATA.kwh.forEach((k) => { const o = new Option(k.toLocaleString("en-US"), k); if (k === 1000) o.selected = true; $("usage").add(o); });
+$("month").add(new Option("All months (12-month average)", ""));
+MONTHS.forEach((m, i) => $("month").add(new Option(m + (i === 11 || i < 2 ? " (Duke winter rates)" : ""), i + 1)));
+$("usage").onchange = (e) => { state.kwh = +e.target.value; render(); };
+$("month").onchange = (e) => { state.month = e.target.value ? +e.target.value : null; render(); };
+$("utype").onchange = (e) => { state.type = e.target.value; render(); };
+
+// ---- measures (same logic as the DAX in docs/POWERBI.md) ----------------------------------
+const months = () => (state.month ? [state.month - 1] : [...Array(12).keys()]);
+const idx = (k) => k / 50;
+const monthlyBill = (u, k) => { const ms = months(); return ms.reduce((s, m) => s + u.bills[m][idx(k)], 0) / ms.length; };
+const component = (u, c, k) => { const ms = months(); return ms.reduce((s, m) => s + u.comps[c][m][idx(k)], 0) / ms.length; };
+const shown = () => DATA.utilities.filter((u) => !state.type || u.type === state.type);
+
+// ---- tooltip --------------------------------------------------------------------------------
+function tip(host, html, x, y) {
+  let t = host.querySelector(".tip"); if (!t) { t = document.createElement("div"); t.className = "tip"; host.appendChild(t); }
+  t.innerHTML = html; t.hidden = false;
+  const w = host.clientWidth, tw = t.offsetWidth;
+  t.style.left = Math.max(0, Math.min(x + 12, w - tw)) + "px"; t.style.top = Math.max(0, y - 10) + "px";
+}
+const untip = (host) => { const t = host.querySelector(".tip"); if (t) t.hidden = true; };
+
+// ---- horizontal bar (sorted ascending, like the Power BI visual) -----------------------------
+function drawBar() {
+  const host = $("bar"); host.innerHTML = "";
+  const rows = shown().map((u) => ({ u, v: monthlyBill(u, state.kwh) })).sort((a, b) => a.v - b.v);
+  const W = Math.max(300, host.clientWidth), rowH = 30, L = 118, R = 70, top = 4;
+  const H = top + rows.length * rowH + 22;
+  const max = Math.max(...rows.map((r) => r.v)) * 1.05 || 1;
+  const sx = (v) => (W - L - R) * v / max;
+  const svg = svgEl("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Bar chart of monthly bills" }, host);
+  niceTicks(0, max, 4).forEach((t) => {
+    svgEl("line", { x1: L + sx(t), x2: L + sx(t), y1: top, y2: top + rows.length * rowH, stroke: "var(--grid)" }, svg);
+    const tx = svgEl("text", { x: L + sx(t), y: H - 6, "font-size": 11, "text-anchor": "middle" }, svg); tx.textContent = "$" + t;
+  });
+  rows.forEach((r, i) => {
+    const y = top + i * rowH;
+    const lab = svgEl("text", { x: L - 8, y: y + 19, "font-size": 12, "text-anchor": "end" }, svg); lab.textContent = r.u.short;
+    const w = Math.max(1, sx(r.v));
+    svgEl("path", { d: roundedBar(L, y + 6, w, rowH - 12), fill: col(r.u.color) }, svg);
+    const val = svgEl("text", { x: L + w + 6, y: y + 19, "font-size": 12 }, svg); val.textContent = fmt$(r.v);
+    const hit = svgEl("rect", { x: 0, y, width: W, height: rowH, fill: "transparent" }, svg);
+    hit.addEventListener("mousemove", (e) => tip(host, `<b>${esc(r.u.name)}</b><br>${fmt$(r.v)} at ${state.kwh.toLocaleString()} kWh`, e.offsetX, e.offsetY));
+    hit.addEventListener("mouseleave", () => untip(host));
+  });
+  svgEl("line", { x1: L, x2: L, y1: top, y2: top + rows.length * rowH, stroke: "var(--ink-3)" }, svg);
+}
+
+// ---- stacked bar of components ---------------------------------------------------------------
+function drawComp() {
+  const host = $("comp"); host.innerHTML = "";
+  $("comp-legend").innerHTML = DATA.components.map((c, i) => `<span><i style="background:${col(i)}"></i>${esc(c)}</span>`).join("");
+  const rows = shown().map((u) => ({ u, parts: DATA.components.map((_, c) => component(u, c, state.kwh)) }))
+    .map((r) => ({ ...r, total: r.parts.reduce((a, b) => a + b, 0) })).sort((a, b) => a.total - b.total);
+  const W = Math.max(300, host.clientWidth), rowH = 30, L = 118, R = 12, top = 4;
+  const H = top + rows.length * rowH + 22;
+  const max = Math.max(...rows.map((r) => r.total)) * 1.02 || 1;
+  const sx = (v) => (W - L - R) * v / max;
+  const svg = svgEl("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Stacked bar chart of bill components" }, host);
+  niceTicks(0, max, 4).forEach((t) => {
+    svgEl("line", { x1: L + sx(t), x2: L + sx(t), y1: top, y2: top + rows.length * rowH, stroke: "var(--grid)" }, svg);
+    const tx = svgEl("text", { x: L + sx(t), y: H - 6, "font-size": 11, "text-anchor": "middle" }, svg); tx.textContent = "$" + t;
+  });
+  rows.forEach((r, i) => {
+    const y = top + i * rowH;
+    const lab = svgEl("text", { x: L - 8, y: y + 19, "font-size": 12, "text-anchor": "end" }, svg); lab.textContent = r.u.short;
+    let x = L;
+    r.parts.forEach((p, c) => {
+      const w = sx(p); if (w <= 0) return;
+      const last = r.parts.slice(c + 1).every((q) => q <= 0);
+      const gap = last ? 0 : 2;
+      svgEl("path", { d: last ? roundedBar(x, y + 6, Math.max(0.5, w), rowH - 12) : `M${x},${y + 6}h${Math.max(0.5, w - gap)}v${rowH - 12}h-${Math.max(0.5, w - gap)}z`, fill: col(c) }, svg);
+      x += w;
+    });
+    const hit = svgEl("rect", { x: 0, y, width: W, height: rowH, fill: "transparent" }, svg);
+    hit.addEventListener("mousemove", (e) => tip(host, `<b>${esc(r.u.name)}</b>` + r.parts.map((p, c) =>
+      `<div class="row"><span><i style="background:${col(c)}"></i>${esc(DATA.components[c])}</span><span>${fmt$(p)}</span></div>`).join("") +
+      `<div class="row"><span>Total</span><span><b>${fmt$(r.total)}</b></span></div>`, e.offsetX, e.offsetY));
+    hit.addEventListener("mouseleave", () => untip(host));
+  });
+  svgEl("line", { x1: L, x2: L, y1: top, y2: top + rows.length * rowH, stroke: "var(--ink-3)" }, svg);
+}
+
+// ---- line chart with crosshair -----------------------------------------------------------------
+let cursor = null;
+function drawLine() {
+  const host = $("line"); host.innerHTML = "";
+  const us = shown().slice().sort((a, b) => a.color - b.color);
+  $("line-legend").innerHTML = us.map((u) => `<span><i style="background:${col(u.color)}"></i>${esc(u.short)}</span>`).join("");
+  const W = Math.max(300, host.clientWidth), H = Math.round(Math.min(380, Math.max(220, W * 0.6)));
+  const L = 52, R = 12, T = 8, B = 28;
+  const series = us.map((u) => ({ u, ys: DATA.kwh.map((k) => monthlyBill(u, k)) }));
+  const ymax = Math.max(...series.flatMap((s) => s.ys)) * 1.05;
+  const sx = (k) => L + (W - L - R) * k / 3000, sy = (v) => T + (H - T - B) * (1 - v / ymax);
+  const svg = svgEl("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Line chart of monthly bill by usage" }, host);
+  niceTicks(0, ymax, 5).forEach((t) => {
+    svgEl("line", { x1: L, x2: W - R, y1: sy(t), y2: sy(t), stroke: "var(--grid)" }, svg);
+    const tx = svgEl("text", { x: L - 6, y: sy(t) + 4, "font-size": 11, "text-anchor": "end" }, svg); tx.textContent = "$" + t;
+  });
+  [0, 500, 1000, 1500, 2000, 2500, 3000].forEach((k) => {
+    const tx = svgEl("text", { x: sx(k), y: H - 8, "font-size": 11, "text-anchor": "middle" }, svg); tx.textContent = k.toLocaleString();
+  });
+  svgEl("line", { x1: L, x2: W - R, y1: sy(0), y2: sy(0), stroke: "var(--ink-3)" }, svg);
+  // selected usage marker
+  svgEl("line", { x1: sx(state.kwh), x2: sx(state.kwh), y1: T, y2: sy(0), stroke: "var(--ink-3)", "stroke-dasharray": "3 3" }, svg);
+  series.forEach((s) => {
+    svgEl("path", { d: s.ys.map((v, i) => (i ? "L" : "M") + sx(DATA.kwh[i]).toFixed(1) + "," + sy(v).toFixed(1)).join(""),
+      fill: "none", stroke: col(s.u.color), "stroke-width": 2, "stroke-linejoin": "round" }, svg);
+  });
+  const cross = svgEl("line", { y1: T, y2: sy(0), stroke: "var(--ink-2)", visibility: "hidden" }, svg);
+  const dots = series.map((s) => svgEl("circle", { r: 4, fill: col(s.u.color), stroke: "var(--card)", "stroke-width": 2, visibility: "hidden" }, svg));
+  const show = (i, px, py) => {
+    const k = DATA.kwh[i];
+    cross.setAttribute("x1", sx(k)); cross.setAttribute("x2", sx(k)); cross.setAttribute("visibility", "visible");
+    series.forEach((s, j) => { dots[j].setAttribute("cx", sx(k)); dots[j].setAttribute("cy", sy(s.ys[i])); dots[j].setAttribute("visibility", "visible"); });
+    const rows = series.map((s) => ({ s, v: s.ys[i] })).sort((a, b) => b.v - a.v);
+    tip(host, `<b>${k.toLocaleString()} kWh</b>` + rows.map((r) =>
+      `<div class="row"><span><i style="background:${col(r.s.u.color)}"></i>${esc(r.s.u.short)}</span><span>${fmt$(r.v)}</span></div>`).join(""),
+      px ?? sx(k), py ?? T);
+  };
+  const hide = () => { cross.setAttribute("visibility", "hidden"); dots.forEach((d) => d.setAttribute("visibility", "hidden")); untip(host); };
+  const hit = svgEl("rect", { x: L, y: T, width: W - L - R, height: H - T - B, fill: "transparent" }, svg);
+  hit.addEventListener("mousemove", (e) => {
+    const k = Math.round(Math.max(0, Math.min(3000, (e.offsetX - L) / (W - L - R) * 3000)) / 50) * 50;
+    cursor = idx(k); show(cursor, e.offsetX, e.offsetY);
+  });
+  hit.addEventListener("mouseleave", hide);
+  host.onkeydown = (e) => {
+    if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
+    e.preventDefault();
+    cursor = Math.max(0, Math.min(DATA.kwh.length - 1, (cursor ?? idx(state.kwh)) + (e.key === "ArrowRight" ? 1 : -1)));
+    show(cursor);
+  };
+  host.onblur = hide;
+}
+
+// ---- detail table ------------------------------------------------------------------------------
+function drawDetail() {
+  const rows = shown().map((u) => {
+    const bill = monthlyBill(u, state.kwh);
+    return { u, bill, cents: state.kwh > 0 ? bill / state.kwh * 100 : null, fuel: component(u, 2, state.kwh) / bill };
+  }).sort((a, b) => a.bill - b.bill);
+  const low = rows.length ? rows[0].bill : 0;
+  $("detail").innerHTML = `<thead><tr><th>Utility</th><th>Type</th><th class="num">Bill</th><th class="num">Cents/kWh</th><th class="num">vs. lowest</th><th class="num">Fuel share</th><th>Rates effective</th></tr></thead><tbody>` +
+    rows.map((r, i) => `<tr><td title="${esc(r.u.name)}" style="white-space:nowrap"><span class="swatch" style="background:${col(r.u.color)}"></span>${esc(r.u.short)}</td><td>${esc(r.u.type)}</td>
+      <td class="num${i === 0 ? " lowest" : ""}">${fmt$(r.bill)}</td><td class="num">${r.cents == null ? "-" : r.cents.toFixed(2)}</td>
+      <td class="num">${i === 0 ? "lowest" : "+" + fmt$(r.bill - low)}</td><td class="num">${(r.fuel * 100).toFixed(1)}%</td><td>${esc(r.u.effective)}</td></tr>`).join("") + "</tbody>";
+}
+
+// ---- page 2 tables -----------------------------------------------------------------------------
+function drawSources() {
+  $("sources").innerHTML = `<thead><tr><th>Utility</th><th>Schedule</th><th>Regulation</th><th>Effective</th><th>Primary source</th></tr></thead><tbody>` +
+    DATA.utilities.map((u) => `<tr><td>${esc(u.name)}</td><td>${esc(u.schedule)}</td><td>${esc(u.jurisdiction)}</td><td>${esc(u.effective)}</td><td class="src">${esc(u.source)}</td></tr>`).join("") + "</tbody>";
+  $("validation").innerHTML = `<thead><tr><th>Utility</th><th class="num">kWh</th><th class="num">Calculator</th><th class="num">Published</th><th class="num">Difference</th><th>Source</th></tr></thead><tbody>` +
+    DATA.validation.map((v) => `<tr><td>${esc(v.short)}</td><td class="num">${(+v.kwh).toLocaleString()}</td><td class="num">${fmt$(+v.calculator)}</td><td class="num">${fmt$(+v.published)}</td>
+      <td class="num">${+v.difference === 0 ? "$0.00" : (+v.difference < 0 ? "-" : "+") + fmt$(Math.abs(+v.difference))}</td><td>${esc(v.source.replaceAll("_", " "))}</td></tr>`).join("") + "</tbody>";
+}
+
+// ---- helpers -----------------------------------------------------------------------------------
+function roundedBar(x, y, w, h) { const r = Math.min(4, w, h / 2); return `M${x},${y}h${w - r}a${r},${r} 0 0 1 ${r},${r}v${h - 2 * r}a${r},${r} 0 0 1 -${r},${r}h-${w - r}z`; }
+function niceTicks(lo, hi, n) {
+  const step0 = (hi - lo) / n, mag = Math.pow(10, Math.floor(Math.log10(step0))), f = step0 / mag;
+  const step = (f < 1.5 ? 1 : f < 3.5 ? 2 : f < 7.5 ? 5 : 10) * mag;
+  const out = []; for (let t = Math.ceil(lo / step) * step; t <= hi; t += step) out.push(Math.round(t)); return out;
+}
+
+function render() {
+  $("bar-title").textContent = `Monthly bill at ${state.kwh.toLocaleString()} kWh (before taxes and fees)`;
+  drawBar(); drawComp(); drawLine(); drawDetail();
+}
+
+// ---- pages (hash routing: #comparison, #sources) -----------------------------------------------
+function showPage(name) {
+  const p = name === "sources" ? "sources" : "comparison";
+  $("page-comparison").hidden = p !== "comparison"; $("page-sources").hidden = p !== "sources";
+  $("tab-comparison").setAttribute("aria-selected", p === "comparison"); $("tab-sources").setAttribute("aria-selected", p === "sources");
+  if (p === "comparison") render();
+}
+$("tab-comparison").onclick = () => { location.hash = "comparison"; };
+$("tab-sources").onclick = () => { location.hash = "sources"; };
+window.addEventListener("hashchange", () => showPage(location.hash.slice(1)));
+let rt; window.addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(render, 120); });
+
+drawSources();
+showPage(location.hash.slice(1));
+</script>
