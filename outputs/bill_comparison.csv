@@ -1,0 +1,17 @@
+cents_per_kwh,customer_charge,kwh,minimum_adjustment,schedule,total_bill,utility,charge_base_energy,charge_capacity,charge_clean_energy_transition,charge_conservation,charge_environmental,charge_fuel,charge_storm_protection,charge_transition_credit
+16.47,10.52,250,0.0,RS-1 Residential Service,41.17,Florida Power & Light (FPL),19.6625,0.13,0,0.37,0.8625,7.2325,2.4875,-0.1
+14.36,10.52,500,0.0,RS-1 Residential Service,71.81,Florida Power & Light (FPL),39.325,0.26,0,0.74,1.725,14.465,4.975,-0.2
+13.66,10.52,750,0.0,RS-1 Residential Service,102.46,Florida Power & Light (FPL),58.9875,0.39,0,1.11,2.5875,21.6975,7.4625,-0.3
+13.31,10.52,1000,0.0,RS-1 Residential Service,133.1,Florida Power & Light (FPL),78.65,0.52,0,1.48,3.45,28.93,9.95,-0.4
+13.5,10.52,1250,0.0,RS-1 Residential Service,168.75,Florida Power & Light (FPL),100.8125,0.65,0,1.85,4.3125,38.6625,12.4375,-0.5
+13.63,10.52,1500,0.0,RS-1 Residential Service,204.39,Florida Power & Light (FPL),122.975,0.78,0,2.22,5.175,48.395,14.925,-0.6
+13.72,10.52,1750,0.0,RS-1 Residential Service,240.04,Florida Power & Light (FPL),145.1375,0.91,0,2.59,6.0375,58.1275,17.4125,-0.7
+13.78,10.52,2000,0.0,RS-1 Residential Service,275.68,Florida Power & Light (FPL),167.3,1.04,0,2.96,6.9,67.86,19.9,-0.8
+19.3,13.5,250,0.0,RS Residential Service,48.26,Tampa Electric (TECO),22.37,0.66,1.015,0.675,0.2175,8.025,1.7925,0
+16.6,13.5,500,0.0,RS Residential Service,83.01,Tampa Electric (TECO),44.74,1.32,2.03,1.35,0.435,16.05,3.585,0
+15.7,13.5,750,0.0,RS Residential Service,117.77,Tampa Electric (TECO),67.11,1.98,3.045,2.025,0.6525,24.075,5.3775,0
+15.25,13.5,1000,0.0,RS Residential Service,152.52,Tampa Electric (TECO),89.48,2.64,4.06,2.7,0.87,32.1,7.17,0
+15.38,13.5,1250,0.0,RS Residential Service,192.28,Tampa Electric (TECO),114.35,3.3,5.075,3.375,1.0875,42.625,8.9625,0
+15.47,13.5,1500,0.0,RS Residential Service,232.03,Tampa Electric (TECO),139.22,3.96,6.09,4.05,1.305,53.15,10.755,0
+15.53,13.5,1750,0.0,RS Residential Service,271.79,Tampa Electric (TECO),164.09,4.62,7.105,4.725,1.5225,63.675,12.5475,0
+15.58,13.5,2000,0.0,RS Residential Service,311.54,Tampa Electric (TECO),188.96,5.28,8.12,5.4,1.74,74.2,14.34,0

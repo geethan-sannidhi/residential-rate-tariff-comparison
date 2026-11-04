@@ -1,0 +1,27 @@
+{
+  "utility": "Florida Power & Light (FPL)",
+  "schedule": "RS-1 Residential Service",
+  "effective": "October 2026",
+  "retrieved": "2026-11-04",
+  "sources": [
+    "https://www.fpl.com/content/dam/fplgp/us/en/rates/pdf/residential-rates-oct2026.pdf"
+  ],
+  "notes": [
+    "Tier break at 1,000 kWh applies to base energy and fuel; the other clauses are flat per kWh.",
+    "Residential customers whose monthly base electric service costs fall below $30 are subject to a minimum $30 base bill (source note).",
+    "No seasonal differentiation in RS-1 as published on this sheet.",
+    "Taxes, franchise fees and other local charges are not on the sheet and are excluded."
+  ],
+  "customer_charge": {"amount": 10.52, "unit": "per_month"},
+  "tier_break_kwh": 1000,
+  "minimum_base_bill": 30.00,
+  "energy_charges_cents_per_kwh": {
+    "base_energy":        {"tier1": 7.865, "tier2": 8.865, "group": "base"},
+    "fuel":               {"tier1": 2.893, "tier2": 3.893, "group": "clause"},
+    "conservation":       {"tier1": 0.148, "tier2": 0.148, "group": "clause"},
+    "capacity":           {"tier1": 0.052, "tier2": 0.052, "group": "clause"},
+    "environmental":      {"tier1": 0.345, "tier2": 0.345, "group": "clause"},
+    "storm_protection":   {"tier1": 0.995, "tier2": 0.995, "group": "clause"},
+    "transition_credit":  {"tier1": -0.040, "tier2": -0.040, "group": "clause"}
+  }
+}

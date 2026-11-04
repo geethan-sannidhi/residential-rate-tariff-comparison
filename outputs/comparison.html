@@ -1,0 +1,14 @@
+<!doctype html><meta charset=utf-8><title>Residential bill comparison</title>
+<style>body{font:15px system-ui;max-width:860px;margin:2rem auto;padding:0 1rem}table{border-collapse:collapse;width:100%}
+td,th{border:1px solid #ccc;padding:.35rem .6rem;text-align:right}th:first-child,td:first-child{text-align:left}
+small{color:#555}</style>
+<h1>Typical monthly bill by usage</h1>
+<p><small>Before franchise fees and taxes. 30-day billing period. See docs/METHODOLOGY.md for what this does and does not show.</small></p>
+<table id=t></table><h3>Sources</h3><ul id=s></ul>
+<script>
+const U=[250, 500, 750, 1000, 1250, 1500, 1750, 2000],S={"Florida Power & Light (FPL)": [41.17, 71.81, 102.46, 133.1, 168.75, 204.39, 240.04, 275.68], "Tampa Electric (TECO)": [48.26, 83.01, 117.77, 152.52, 192.28, 232.03, 271.79, 311.54]},M={"Florida Power & Light (FPL)": {"schedule": "RS-1 Residential Service", "effective": "October 2026", "sources": ["https://www.fpl.com/content/dam/fplgp/us/en/rates/pdf/residential-rates-oct2026.pdf"]}, "Tampa Electric (TECO)": {"schedule": "RS Residential Service", "effective": "Base rates Jan 1 2025; clauses Jan 2026; CETM Aug 1 2026", "sources": ["https://www.tampaelectric.com/company/ourpowersystem/tariff/ (Tariff Section Six, Sheets 6.020-6.025 and 6.030)"]}};
+let h='<tr><th>kWh</th>'+Object.keys(S).map(k=>'<th>'+k+'</th>').join('')+'<th>Difference</th></tr>';
+U.forEach((u,i)=>{const v=Object.values(S).map(a=>a[i]);h+='<tr><td>'+u+'</td>'+v.map(x=>'<td>$'+x.toFixed(2)+'</td>').join('')+'<td>$'+(Math.max(...v)-Math.min(...v)).toFixed(2)+'</td></tr>'});
+document.getElementById('t').innerHTML=h;
+document.getElementById('s').innerHTML=Object.entries(M).map(([k,m])=>'<li>'+k+' - '+m.schedule+' ('+m.effective+'): '+m.sources.join(', ')+'</li>').join('');
+</script>
