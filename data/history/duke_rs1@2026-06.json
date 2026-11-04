@@ -1,0 +1,77 @@
+{
+  "utility": "Duke Energy Florida",
+  "schedule": "RS-1 Residential Service",
+  "jurisdiction": "investor-owned (PSC rate-regulated)",
+  "effective": "June 1, 2026",
+  "retrieved": "2026-11-04",
+  "sources": [
+    "https://www.floridapsc.com/library/FILINGS/2026/01893-2026/01893-2026.pdf (Sheet 6.120: rates replaced on June 1, 2026 shown struck through; new rates effective June 1, 2026)",
+    "PSC memorandum, July 21, 2026 (Doc. 04530-2026): residential ASC rises from $2.28 to $2.38 per 1,000 kWh effective September 1, 2026",
+    "Florida PSC, same table, August 1, 2026: .../BillingAdjustments/ba_total-2026_oldsep26.pdf",
+    "Sheet 6.105 (114th revised, effective Sept 1, 2026) shows fuel 3.465/4.535 unchanged from the prior revision"
+  ],
+  "notes": [
+    "June 1 base rates; fuel 3.465 / 4.535 cents/kWh; ASC 0.228.",
+    "Documented for August by the PSC's August 1, 2026 table (base $91.21 June-Nov, fuel $34.65, ASC $2.28). The date the fuel factor fell from 4.127 is not documented in the sources reviewed, so June and July are treated as inferred."
+  ],
+  "customer_charge": {
+    "amount": 14.35,
+    "unit": "per_month"
+  },
+  "tier_break_kwh": 1000,
+  "minimum_base_bill": null,
+  "winter_months": [
+    12,
+    1,
+    2
+  ],
+  "energy_charges_cents_per_kwh": {
+    "base_energy": {
+      "tier1": 7.686,
+      "tier2": 8.453,
+      "winter": {
+        "tier1": 8.754,
+        "tier2": 10.242
+      },
+      "group": "base"
+    },
+    "fuel": {
+      "tier1": 3.465,
+      "tier2": 4.535,
+      "group": "clause"
+    },
+    "conservation": {
+      "tier1": 0.386,
+      "tier2": 0.386,
+      "group": "clause"
+    },
+    "capacity": {
+      "tier1": 0.133,
+      "tier2": 0.133,
+      "group": "clause"
+    },
+    "environmental": {
+      "tier1": 0.04,
+      "tier2": 0.04,
+      "group": "clause"
+    },
+    "asset_securitization": {
+      "tier1": 0.228,
+      "tier2": 0.228,
+      "group": "clause"
+    },
+    "storm_protection": {
+      "tier1": 0.936,
+      "tier2": 0.936,
+      "group": "clause"
+    }
+  },
+  "version": "duke_rs1@2026-06",
+  "months_documented": [
+    "2026-08"
+  ],
+  "months_inferred": [
+    "2026-06",
+    "2026-07"
+  ]
+}

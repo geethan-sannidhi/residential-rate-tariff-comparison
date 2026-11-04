@@ -1,0 +1,74 @@
+{
+  "utility": "Florida Power & Light (FPL)",
+  "schedule": "RS-1 Residential Service",
+  "effective": "January 2026",
+  "retrieved": "2026-11-04",
+  "sources": [
+    "https://www.fpl.com/content/dam/fplgp/us/en/rates/pdf/res-eff-jan-2026.pdf",
+    "Florida PSC, 'Total Cost for 1,000 kWh - Residential Service', March 2026 (period January-December 2026): https://www.floridapsc.com/pscfiles/website-files/PDF/Utilities/Electricgas/BillingAdjustments/ba_total-2026_oldmar26.pdf",
+    "Florida PSC, same table, August 1, 2026: .../BillingAdjustments/ba_total-2026_oldsep26.pdf"
+  ],
+  "notes": [
+    "Tier break at 1,000 kWh applies to base energy and fuel; the other clauses are flat per kWh.",
+    "Residential customers whose monthly base electric service costs fall below $30 are subject to a minimum $30 base bill (source note).",
+    "No seasonal differentiation in RS-1 as published on this sheet.",
+    "Taxes, franchise fees and other local charges are not on the sheet and are excluded."
+  ],
+  "customer_charge": {
+    "amount": 10.52,
+    "unit": "per_month"
+  },
+  "tier_break_kwh": 1000,
+  "minimum_base_bill": 30.0,
+  "energy_charges_cents_per_kwh": {
+    "base_energy": {
+      "tier1": 7.865,
+      "tier2": 8.865,
+      "group": "base"
+    },
+    "fuel": {
+      "tier1": 2.893,
+      "tier2": 3.893,
+      "group": "clause"
+    },
+    "conservation": {
+      "tier1": 0.148,
+      "tier2": 0.148,
+      "group": "clause"
+    },
+    "capacity": {
+      "tier1": 0.052,
+      "tier2": 0.052,
+      "group": "clause"
+    },
+    "environmental": {
+      "tier1": 0.345,
+      "tier2": 0.345,
+      "group": "clause"
+    },
+    "storm_protection": {
+      "tier1": 0.995,
+      "tier2": 0.995,
+      "group": "clause"
+    },
+    "transition_credit": {
+      "tier1": -0.04,
+      "tier2": -0.04,
+      "group": "clause"
+    }
+  },
+  "jurisdiction": "investor-owned (PSC rate-regulated)",
+  "version": "fpl_rs1@2026-01",
+  "months_documented": [
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07",
+    "2026-08"
+  ],
+  "months_inferred": [],
+  "version_note": "Same RS-1 rates as FPL's January 2026 insert; unchanged through August per the PSC's March and August tables."
+}

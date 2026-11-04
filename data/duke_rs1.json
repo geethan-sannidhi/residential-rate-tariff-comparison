@@ -2,7 +2,7 @@
   "utility": "Duke Energy Florida",
   "schedule": "RS-1 Residential Service",
   "jurisdiction": "investor-owned (PSC rate-regulated)",
-  "effective": "Base rates and BA-1 factors effective September 1, 2026",
+  "effective": "Base rates in effect from October 2026 (filed as effective September 1); BA-1 factors effective September 1, 2026",
   "retrieved": "2026-11-04",
   "sources": [
     "https://www.psc.state.fl.us/library/FILINGS/2026/03866-2026/03866-2026.pdf (Sheet 6.120, 47th revised, clean version)",
@@ -10,6 +10,7 @@
     "https://www.floridapsc.com/pscfiles/website-files/PDF/Utilities/Electricgas/BillingAdjustments/ba_total-2026.pdf (PSC 'Total Cost for 1,000 kWh - Residential', October 1, 2026)"
   ],
   "notes": [
+    "The base rates on Sheet 6.120 (47th revised) were filed as effective September 1, 2026, but the PSC's September 1 table still used the June base rates and its October 1 table is the first to show these. They are current as of November 2026 either way.",
     "Seasonal base energy: December-February ('winter') rates differ from March-November.",
     "Clause factors from BA-1 Sheet 6.105: ECCR 0.386, CCR 0.133, ECRC 0.040, ASC 0.238, SPPCRC 0.936; SCRS shown as '-'.",
     "Fuel 3.465 / 4.535 cents/kWh from Sheet 6.105 effective Sept 1, 2026. The PSC's October 1, 2026 summary table shows Duke fuel at $41.27 per 1,000 kWh, which equals Duke's Jan-May 2026 factor; this tool follows the tariff sheet. Open discrepancy.",

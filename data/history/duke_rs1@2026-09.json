@@ -1,0 +1,73 @@
+{
+  "utility": "Duke Energy Florida",
+  "schedule": "RS-1 Residential Service",
+  "jurisdiction": "investor-owned (PSC rate-regulated)",
+  "effective": "September 1, 2026 (ASC change only)",
+  "retrieved": "2026-11-04",
+  "sources": [
+    "PSC memorandum, July 21, 2026 (Doc. 04530-2026): ASC $2.38 per 1,000 kWh from September 1, 2026",
+    "Florida PSC, 'Total Cost for 1,000 kWh - Residential Service', September 1, 2026 (.../BillingAdjustments/ba_total-2026_oldoct26.pdf): base $91.21 (June-November), fuel $34.65, ASC $2.38",
+    "https://www.floridapsc.com/library/FILINGS/2026/01893-2026/01893-2026.pdf (June 1 base rates)"
+  ],
+  "notes": [
+    "September 2026: June 1 base rates, fuel 3.465 / 4.535, ASC raised to 0.238 cents/kWh.",
+    "Duke filed its second solar base rate adjustment (Sheet 6.120, 47th revised) as effective September 1, 2026, but the PSC's September 1 table still uses the June base rates; its October 1 table is the first to show the new ones ($91.74). This version follows the PSC tables."
+  ],
+  "customer_charge": {
+    "amount": 14.35,
+    "unit": "per_month"
+  },
+  "tier_break_kwh": 1000,
+  "minimum_base_bill": null,
+  "winter_months": [
+    12,
+    1,
+    2
+  ],
+  "energy_charges_cents_per_kwh": {
+    "base_energy": {
+      "tier1": 7.686,
+      "tier2": 8.453,
+      "winter": {
+        "tier1": 8.754,
+        "tier2": 10.242
+      },
+      "group": "base"
+    },
+    "fuel": {
+      "tier1": 3.465,
+      "tier2": 4.535,
+      "group": "clause"
+    },
+    "conservation": {
+      "tier1": 0.386,
+      "tier2": 0.386,
+      "group": "clause"
+    },
+    "capacity": {
+      "tier1": 0.133,
+      "tier2": 0.133,
+      "group": "clause"
+    },
+    "environmental": {
+      "tier1": 0.04,
+      "tier2": 0.04,
+      "group": "clause"
+    },
+    "asset_securitization": {
+      "tier1": 0.238,
+      "tier2": 0.238,
+      "group": "clause"
+    },
+    "storm_protection": {
+      "tier1": 0.936,
+      "tier2": 0.936,
+      "group": "clause"
+    }
+  },
+  "version": "duke_rs1@2026-09",
+  "months_documented": [
+    "2026-09"
+  ],
+  "months_inferred": []
+}

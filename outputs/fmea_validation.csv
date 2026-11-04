@@ -1,0 +1,136 @@
+tariff,edition,kwh,total,calculator,difference,result,basis,version,source
+duke_rs1,2026-01,1000,192.31,159.85,-32.46,mismatch,documented,duke_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_January_Rates.pdf
+duke_rs1,2026-01,1200,233.01,194.07,-38.94,mismatch,documented,duke_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_January_Rates.pdf
+duke_rs1,2026-01,2500,497.63,416.47,-81.16,mismatch,documented,duke_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_January_Rates.pdf
+duke_rs1,2026-02,1000,159.91,159.85,-0.06,mismatch,documented,duke_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_February_Rates.pdf
+duke_rs1,2026-02,1200,194.13,194.07,-0.06,mismatch,documented,duke_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_February_Rates.pdf
+duke_rs1,2026-02,2500,416.63,416.47,-0.16,mismatch,documented,duke_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_February_Rates.pdf
+duke_rs1,2026-03,1000,149.23,149.23,0.0,exact,documented,duke_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_March_Rates.pdf
+duke_rs1,2026-03,1200,179.88,179.89,0.01,within rounding,documented,duke_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_March_Rates.pdf
+duke_rs1,2026-03,2500,379.17,379.17,0.0,exact,documented,duke_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_March_Rates.pdf
+duke_rs1,2026-04,1000,149.23,149.23,0.0,exact,documented,duke_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_April_Rates.pdf
+duke_rs1,2026-04,1200,179.88,179.89,0.01,within rounding,documented,duke_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_April_Rates.pdf
+duke_rs1,2026-04,2500,379.17,379.17,0.0,exact,documented,duke_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_April_Rates.pdf
+duke_rs1,2026-05,1000,149.23,149.23,0.0,exact,documented,duke_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_May_Rates.pdf
+duke_rs1,2026-05,1200,179.88,179.89,0.01,within rounding,documented,duke_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_May_Rates.pdf
+duke_rs1,2026-05,2500,379.17,379.17,0.0,exact,documented,duke_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_May_Rates.pdf
+duke_rs1,2026-06,1000,143.09,143.09,0.0,exact,inferred,duke_rs1@2026-06,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_June_Rates.pdf
+duke_rs1,2026-06,1200,172.51,172.51,0.0,exact,inferred,duke_rs1@2026-06,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_June_Rates.pdf
+duke_rs1,2026-06,2500,363.76,363.76,0.0,exact,inferred,duke_rs1@2026-06,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_June_Rates.pdf
+duke_rs1,2026-07,1000,143.09,143.09,0.0,exact,inferred,duke_rs1@2026-06,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_July_Rates.pdf
+duke_rs1,2026-07,1200,172.51,172.51,0.0,exact,inferred,duke_rs1@2026-06,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_July_Rates.pdf
+duke_rs1,2026-07,2500,363.76,363.76,0.0,exact,inferred,duke_rs1@2026-06,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_July_Rates.pdf
+duke_rs1,2026-08,1000,143.09,143.09,0.0,exact,documented,duke_rs1@2026-06,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_August_Rates.pdf
+duke_rs1,2026-08,1200,172.51,172.51,0.0,exact,documented,duke_rs1@2026-06,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_August_Rates.pdf
+duke_rs1,2026-08,2500,363.76,363.76,0.0,exact,documented,duke_rs1@2026-06,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_August_Rates.pdf
+duke_rs1,2026-09,1000,143.19,143.19,0.0,exact,documented,duke_rs1@2026-09,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_September_Rates.pdf
+duke_rs1,2026-09,1200,172.63,172.63,0.0,exact,documented,duke_rs1@2026-09,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_September_Rates.pdf
+duke_rs1,2026-09,2500,364.01,364.01,0.0,exact,documented,duke_rs1@2026-09,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_September_Rates.pdf
+fpl_nwfl_rs1,2026-01,1000,137.71,137.71,0.0,exact,documented,fpl_nwfl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_January_Rates.pdf
+fpl_nwfl_rs1,2026-01,1200,167.15,167.15,0.0,exact,documented,fpl_nwfl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_January_Rates.pdf
+fpl_nwfl_rs1,2026-01,2500,358.52,358.5,-0.02,within rounding,documented,fpl_nwfl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_January_Rates.pdf
+fpl_nwfl_rs1,2026-02,1000,137.71,137.71,0.0,exact,documented,fpl_nwfl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_February_Rates.pdf
+fpl_nwfl_rs1,2026-02,1200,167.15,167.15,0.0,exact,documented,fpl_nwfl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_February_Rates.pdf
+fpl_nwfl_rs1,2026-02,2500,358.52,358.5,-0.02,within rounding,documented,fpl_nwfl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_February_Rates.pdf
+fpl_nwfl_rs1,2026-03,1000,137.71,137.71,0.0,exact,documented,fpl_nwfl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_March_Rates.pdf
+fpl_nwfl_rs1,2026-03,1200,167.15,167.15,0.0,exact,documented,fpl_nwfl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_March_Rates.pdf
+fpl_nwfl_rs1,2026-03,2500,358.52,358.5,-0.02,within rounding,documented,fpl_nwfl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_March_Rates.pdf
+fpl_nwfl_rs1,2026-04,1000,137.71,137.71,0.0,exact,documented,fpl_nwfl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_April_Rates.pdf
+fpl_nwfl_rs1,2026-04,1200,167.15,167.15,0.0,exact,documented,fpl_nwfl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_April_Rates.pdf
+fpl_nwfl_rs1,2026-04,2500,358.52,358.5,-0.02,within rounding,documented,fpl_nwfl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_April_Rates.pdf
+fpl_nwfl_rs1,2026-05,1000,137.71,137.71,0.0,exact,documented,fpl_nwfl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_May_Rates.pdf
+fpl_nwfl_rs1,2026-05,1200,167.15,167.15,0.0,exact,documented,fpl_nwfl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_May_Rates.pdf
+fpl_nwfl_rs1,2026-05,2500,358.52,358.5,-0.02,within rounding,documented,fpl_nwfl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_May_Rates.pdf
+fpl_nwfl_rs1,2026-06,1000,137.71,137.71,0.0,exact,documented,fpl_nwfl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_June_Rates.pdf
+fpl_nwfl_rs1,2026-06,1200,167.15,167.15,0.0,exact,documented,fpl_nwfl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_June_Rates.pdf
+fpl_nwfl_rs1,2026-06,2500,358.52,358.5,-0.02,within rounding,documented,fpl_nwfl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_June_Rates.pdf
+fpl_nwfl_rs1,2026-07,1000,137.71,137.71,0.0,exact,documented,fpl_nwfl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_July_Rates.pdf
+fpl_nwfl_rs1,2026-07,1200,167.15,167.15,0.0,exact,documented,fpl_nwfl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_July_Rates.pdf
+fpl_nwfl_rs1,2026-07,2500,358.52,358.5,-0.02,within rounding,documented,fpl_nwfl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_July_Rates.pdf
+fpl_nwfl_rs1,2026-08,1000,137.71,137.71,0.0,exact,documented,fpl_nwfl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_August_Rates.pdf
+fpl_nwfl_rs1,2026-08,1200,167.15,167.15,0.0,exact,documented,fpl_nwfl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_August_Rates.pdf
+fpl_nwfl_rs1,2026-08,2500,358.52,358.5,-0.02,within rounding,documented,fpl_nwfl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_August_Rates.pdf
+fpl_nwfl_rs1,2026-09,1000,129.74,129.74,0.0,exact,documented,fpl_nwfl_rs1@2026-09,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_September_Rates.pdf
+fpl_nwfl_rs1,2026-09,1200,157.59,157.58,-0.01,within rounding,documented,fpl_nwfl_rs1@2026-09,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_September_Rates.pdf
+fpl_nwfl_rs1,2026-09,2500,338.58,338.57,-0.01,within rounding,documented,fpl_nwfl_rs1@2026-09,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_September_Rates.pdf
+fpl_rs1,2026-01,1000,133.1,133.1,0.0,exact,documented,fpl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_January_Rates.pdf
+fpl_rs1,2026-01,1200,161.62,161.62,0.0,exact,documented,fpl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_January_Rates.pdf
+fpl_rs1,2026-01,2500,346.99,346.97,-0.02,within rounding,documented,fpl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_January_Rates.pdf
+fpl_rs1,2026-02,1000,133.1,133.1,0.0,exact,documented,fpl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_February_Rates.pdf
+fpl_rs1,2026-02,1200,161.62,161.62,0.0,exact,documented,fpl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_February_Rates.pdf
+fpl_rs1,2026-02,2500,346.99,346.97,-0.02,within rounding,documented,fpl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_February_Rates.pdf
+fpl_rs1,2026-03,1000,133.1,133.1,0.0,exact,documented,fpl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_March_Rates.pdf
+fpl_rs1,2026-03,1200,161.62,161.62,0.0,exact,documented,fpl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_March_Rates.pdf
+fpl_rs1,2026-03,2500,346.99,346.97,-0.02,within rounding,documented,fpl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_March_Rates.pdf
+fpl_rs1,2026-04,1000,133.1,133.1,0.0,exact,documented,fpl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_April_Rates.pdf
+fpl_rs1,2026-04,1200,161.62,161.62,0.0,exact,documented,fpl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_April_Rates.pdf
+fpl_rs1,2026-04,2500,346.99,346.97,-0.02,within rounding,documented,fpl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_April_Rates.pdf
+fpl_rs1,2026-05,1000,133.1,133.1,0.0,exact,documented,fpl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_May_Rates.pdf
+fpl_rs1,2026-05,1200,161.62,161.62,0.0,exact,documented,fpl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_May_Rates.pdf
+fpl_rs1,2026-05,2500,346.99,346.97,-0.02,within rounding,documented,fpl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_May_Rates.pdf
+fpl_rs1,2026-06,1000,133.1,133.1,0.0,exact,documented,fpl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_June_Rates.pdf
+fpl_rs1,2026-06,1200,161.62,161.62,0.0,exact,documented,fpl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_June_Rates.pdf
+fpl_rs1,2026-06,2500,346.99,346.97,-0.02,within rounding,documented,fpl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_June_Rates.pdf
+fpl_rs1,2026-07,1000,133.1,133.1,0.0,exact,documented,fpl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_July_Rates.pdf
+fpl_rs1,2026-07,1200,161.62,161.62,0.0,exact,documented,fpl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_July_Rates.pdf
+fpl_rs1,2026-07,2500,346.99,346.97,-0.02,within rounding,documented,fpl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_July_Rates.pdf
+fpl_rs1,2026-08,1000,133.1,133.1,0.0,exact,documented,fpl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_August_Rates.pdf
+fpl_rs1,2026-08,1200,161.62,161.62,0.0,exact,documented,fpl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_August_Rates.pdf
+fpl_rs1,2026-08,2500,346.99,346.97,-0.02,within rounding,documented,fpl_rs1@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_August_Rates.pdf
+fpl_rs1,2026-09,1000,125.13,125.13,0.0,exact,documented,fpl_rs1@2026-09,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_September_Rates.pdf
+fpl_rs1,2026-09,1200,152.06,152.05,-0.01,within rounding,documented,fpl_rs1@2026-09,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_September_Rates.pdf
+fpl_rs1,2026-09,2500,327.06,327.05,-0.01,within rounding,documented,fpl_rs1@2026-09,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_September_Rates.pdf
+fpuc_rs,2026-01,1000,159.33,159.33,0.0,exact,documented,fpuc_rs@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_January_Rates.pdf
+fpuc_rs,2026-01,1200,192.25,192.25,0.0,exact,documented,fpuc_rs@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_January_Rates.pdf
+fpuc_rs,2026-01,2500,406.27,406.26,-0.01,within rounding,documented,fpuc_rs@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_January_Rates.pdf
+fpuc_rs,2026-02,1000,159.33,159.33,0.0,exact,documented,fpuc_rs@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_February_Rates.pdf
+fpuc_rs,2026-02,1200,192.25,192.25,0.0,exact,documented,fpuc_rs@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_February_Rates.pdf
+fpuc_rs,2026-02,2500,406.27,406.26,-0.01,within rounding,documented,fpuc_rs@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_February_Rates.pdf
+fpuc_rs,2026-03,1000,159.33,159.33,0.0,exact,documented,fpuc_rs@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_March_Rates.pdf
+fpuc_rs,2026-03,1200,192.25,192.25,0.0,exact,documented,fpuc_rs@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_March_Rates.pdf
+fpuc_rs,2026-03,2500,406.27,406.26,-0.01,within rounding,documented,fpuc_rs@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_March_Rates.pdf
+fpuc_rs,2026-04,1000,161.04,161.04,0.0,exact,inferred,fpuc_rs@2026-04,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_April_Rates.pdf
+fpuc_rs,2026-04,1200,194.52,194.52,0.0,exact,inferred,fpuc_rs@2026-04,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_April_Rates.pdf
+fpuc_rs,2026-04,2500,412.18,412.17,-0.01,within rounding,inferred,fpuc_rs@2026-04,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_April_Rates.pdf
+fpuc_rs,2026-05,1000,161.04,161.04,0.0,exact,inferred,fpuc_rs@2026-04,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_May_Rates.pdf
+fpuc_rs,2026-05,1200,194.52,194.52,0.0,exact,inferred,fpuc_rs@2026-04,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_May_Rates.pdf
+fpuc_rs,2026-05,2500,412.18,412.17,-0.01,within rounding,inferred,fpuc_rs@2026-04,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_May_Rates.pdf
+fpuc_rs,2026-06,1000,161.04,161.04,0.0,exact,inferred,fpuc_rs@2026-04,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_June_Rates.pdf
+fpuc_rs,2026-06,1200,194.52,194.52,0.0,exact,inferred,fpuc_rs@2026-04,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_June_Rates.pdf
+fpuc_rs,2026-06,2500,412.18,412.17,-0.01,within rounding,inferred,fpuc_rs@2026-04,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_June_Rates.pdf
+fpuc_rs,2026-07,1000,161.04,161.04,0.0,exact,inferred,fpuc_rs@2026-04,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_July_Rates.pdf
+fpuc_rs,2026-07,1200,194.52,194.52,0.0,exact,inferred,fpuc_rs@2026-04,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_July_Rates.pdf
+fpuc_rs,2026-07,2500,412.18,412.17,-0.01,within rounding,inferred,fpuc_rs@2026-04,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_July_Rates.pdf
+fpuc_rs,2026-08,1000,161.04,161.04,0.0,exact,documented,fpuc_rs@2026-04,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_August_Rates.pdf
+fpuc_rs,2026-08,1200,194.52,194.52,0.0,exact,documented,fpuc_rs@2026-04,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_August_Rates.pdf
+fpuc_rs,2026-08,2500,412.18,412.17,-0.01,within rounding,documented,fpuc_rs@2026-04,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_August_Rates.pdf
+fpuc_rs,2026-09,1000,161.04,161.04,0.0,exact,documented,fpuc_rs@2026-04,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_September_Rates.pdf
+fpuc_rs,2026-09,1200,194.52,194.52,0.0,exact,documented,fpuc_rs@2026-04,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_September_Rates.pdf
+fpuc_rs,2026-09,2500,412.18,412.17,-0.01,within rounding,documented,fpuc_rs@2026-04,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_September_Rates.pdf
+teco_rs,2026-01,1000,172.47,172.47,0.0,exact,documented,teco_rs@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_January_Rates.pdf
+teco_rs,2026-01,1200,208.26,208.26,0.0,exact,documented,teco_rs@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_January_Rates.pdf
+teco_rs,2026-01,2500,440.94,440.93,-0.01,within rounding,documented,teco_rs@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_January_Rates.pdf
+teco_rs,2026-02,1000,172.47,172.47,0.0,exact,documented,teco_rs@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_February_Rates.pdf
+teco_rs,2026-02,1200,208.26,208.26,0.0,exact,documented,teco_rs@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_February_Rates.pdf
+teco_rs,2026-02,2500,440.94,440.93,-0.01,within rounding,documented,teco_rs@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_February_Rates.pdf
+teco_rs,2026-03,1000,172.47,172.47,0.0,exact,documented,teco_rs@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_March_Rates.pdf
+teco_rs,2026-03,1200,208.26,208.26,0.0,exact,documented,teco_rs@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_March_Rates.pdf
+teco_rs,2026-03,2500,440.94,440.93,-0.01,within rounding,documented,teco_rs@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_March_Rates.pdf
+teco_rs,2026-04,1000,172.47,172.47,0.0,exact,documented,teco_rs@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_April_Rates.pdf
+teco_rs,2026-04,1200,208.26,208.26,0.0,exact,documented,teco_rs@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_April_Rates.pdf
+teco_rs,2026-04,2500,440.94,440.93,-0.01,within rounding,documented,teco_rs@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_April_Rates.pdf
+teco_rs,2026-05,1000,172.47,172.47,0.0,exact,documented,teco_rs@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_May_Rates.pdf
+teco_rs,2026-05,1200,208.26,208.26,0.0,exact,documented,teco_rs@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_May_Rates.pdf
+teco_rs,2026-05,2500,440.94,440.93,-0.01,within rounding,documented,teco_rs@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_May_Rates.pdf
+teco_rs,2026-06,1000,172.47,172.47,0.0,exact,documented,teco_rs@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_June_Rates.pdf
+teco_rs,2026-06,1200,208.26,208.26,0.0,exact,documented,teco_rs@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_June_Rates.pdf
+teco_rs,2026-06,2500,440.94,440.93,-0.01,within rounding,documented,teco_rs@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_June_Rates.pdf
+teco_rs,2026-07,1000,172.47,172.47,0.0,exact,documented,teco_rs@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_July_Rates.pdf
+teco_rs,2026-07,1200,208.26,208.26,0.0,exact,documented,teco_rs@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_July_Rates.pdf
+teco_rs,2026-07,2500,440.94,440.93,-0.01,within rounding,documented,teco_rs@2026-01,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_July_Rates.pdf
+teco_rs,2026-08,1000,152.52,152.52,0.0,exact,documented,teco_rs@2026-08,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_August_Rates.pdf
+teco_rs,2026-08,1200,184.32,184.32,0.0,exact,documented,teco_rs@2026-08,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_August_Rates.pdf
+teco_rs,2026-08,2500,391.06,391.05,-0.01,within rounding,documented,teco_rs@2026-08,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_August_Rates.pdf
+teco_rs,2026-09,1000,152.52,152.52,0.0,exact,documented,teco_rs@2026-08,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_September_Rates.pdf
+teco_rs,2026-09,1200,184.32,184.32,0.0,exact,documented,teco_rs@2026-08,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_September_Rates.pdf
+teco_rs,2026-09,2500,391.06,391.05,-0.01,within rounding,documented,teco_rs@2026-08,https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_September_Rates.pdf

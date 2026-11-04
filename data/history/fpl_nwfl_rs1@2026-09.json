@@ -1,0 +1,71 @@
+{
+  "utility": "Florida Power & Light - Northwest Florida (former Gulf Power)",
+  "schedule": "RS-1 Residential Service with Northwest Florida transition rider",
+  "effective": "September 2026",
+  "retrieved": "2026-11-04",
+  "sources": [
+    "https://www.fpl.com/content/dam/fplgp/us/en/rates/pdf/residential-rates-sept2026.pdf",
+    "Florida PSC, same table, September 1, 2026: .../BillingAdjustments/ba_total-2026_oldoct26.pdf",
+    "https://www.floridapsc.com/pscfiles/website-files/PDF/Utilities/Electricgas/BillingAdjustments/ba_total-2026.pdf (PSC 'Total Cost for 1,000 kWh - Residential', October 1, 2026)"
+  ],
+  "notes": [
+    "Same RS-1 base and clause rates as FPL; differs only by the transition rider.",
+    "PSC October 1, 2026 table lists the former-Gulf transition rider as +$4.21 per 1,000 kWh (vs. FPL's -$0.40 credit). Modeled as a flat 0.421 cents/kWh; that per-kWh treatment is an assumption.",
+    "Taxes, franchise fees and other local charges are excluded."
+  ],
+  "customer_charge": {
+    "amount": 10.52,
+    "unit": "per_month"
+  },
+  "tier_break_kwh": 1000,
+  "minimum_base_bill": 30.0,
+  "energy_charges_cents_per_kwh": {
+    "base_energy": {
+      "tier1": 7.865,
+      "tier2": 8.865,
+      "group": "base"
+    },
+    "fuel": {
+      "tier1": 2.893,
+      "tier2": 3.893,
+      "group": "clause"
+    },
+    "conservation": {
+      "tier1": 0.148,
+      "tier2": 0.148,
+      "group": "clause"
+    },
+    "capacity": {
+      "tier1": 0.052,
+      "tier2": 0.052,
+      "group": "clause"
+    },
+    "environmental": {
+      "tier1": 0.345,
+      "tier2": 0.345,
+      "group": "clause"
+    },
+    "storm_protection": {
+      "tier1": 0.995,
+      "tier2": 0.995,
+      "group": "clause"
+    },
+    "transition_rider": {
+      "tier1": 0.421,
+      "tier2": 0.421,
+      "group": "clause"
+    },
+    "storm_restoration_credit": {
+      "tier1": -0.797,
+      "tier2": -0.797,
+      "group": "clause"
+    }
+  },
+  "jurisdiction": "investor-owned (PSC rate-regulated)",
+  "version": "fpl_nwfl_rs1@2026-09",
+  "months_documented": [
+    "2026-09"
+  ],
+  "months_inferred": [],
+  "version_note": "September 2026 only: storm restoration credit of -0.797 cents/kWh (FPL September insert; PSC table shows -$7.97 per 1,000 kWh)."
+}

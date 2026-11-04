@@ -1,0 +1,55 @@
+{
+  "utility": "Florida Public Utilities Company",
+  "schedule": "RS Residential Service",
+  "jurisdiction": "investor-owned (PSC rate-regulated)",
+  "effective": "Settlement Rate Year 1",
+  "retrieved": "2026-11-04",
+  "sources": [
+    "https://www.psc.state.fl.us/library/filings/2026/01126-2026/01126-2026.pdf (Docket 20250139-EI settlement rate design, Rate Year 2)",
+    "Order No. PSC-2025-0436-FOF-EI, Table 18-7 (FPUC 2026 fuel factors): https://www.floridapsc.com/pscfiles/library/filings/2025/15230-2025/15230-2025.pdf",
+    "https://www.floridapsc.com/pscfiles/website-files/PDF/Utilities/Electricgas/BillingAdjustments/ba_total-2026.pdf (PSC 'Total Cost for 1,000 kWh - Residential', October 1, 2026)",
+    "Florida PSC, 'Total Cost for 1,000 kWh - Residential Service', March 2026 (period January-December 2026): https://www.floridapsc.com/pscfiles/website-files/PDF/Utilities/Electricgas/BillingAdjustments/ba_total-2026_oldmar26.pdf"
+  ],
+  "notes": [
+    "Rate Year 1 base energy 2.696 / 4.415 cents/kWh (Docket 20250139-EI rate design). The PSC's March 2026 table shows FPUC base charges of $51.36 at 1,000 kWh, which is Rate Year 1.",
+    "Fuel and purchased power 8.820 / 10.070 cents/kWh.",
+    "Conservation ($3.21) and storm protection plan ($16.56) per 1,000 kWh are from the PSC October 2026 table and modeled as flat per kWh (0.321 and 1.656 cents); the FMEA 1,200 kWh figure agrees with flat treatment.",
+    "Customer charge rose from $16.95 to $24.40 under the settlement.",
+    "Taxes, franchise fees and other local charges are excluded."
+  ],
+  "customer_charge": {
+    "amount": 24.4,
+    "unit": "per_month"
+  },
+  "tier_break_kwh": 1000,
+  "minimum_base_bill": null,
+  "energy_charges_cents_per_kwh": {
+    "base_energy": {
+      "tier1": 2.696,
+      "tier2": 4.415,
+      "group": "base"
+    },
+    "fuel": {
+      "tier1": 8.82,
+      "tier2": 10.07,
+      "group": "clause"
+    },
+    "conservation": {
+      "tier1": 0.321,
+      "tier2": 0.321,
+      "group": "clause"
+    },
+    "storm_protection": {
+      "tier1": 1.656,
+      "tier2": 1.656,
+      "group": "clause"
+    }
+  },
+  "version": "fpuc_rs@2026-01",
+  "months_documented": [
+    "2026-01",
+    "2026-02",
+    "2026-03"
+  ],
+  "months_inferred": []
+}

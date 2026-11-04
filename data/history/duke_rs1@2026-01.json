@@ -1,0 +1,78 @@
+{
+  "utility": "Duke Energy Florida",
+  "schedule": "RS-1 Residential Service",
+  "jurisdiction": "investor-owned (PSC rate-regulated)",
+  "effective": "January 1, 2026",
+  "retrieved": "2026-11-04",
+  "sources": [
+    "https://www.floridapsc.com/library/FILINGS/2026/01893-2026/01893-2026.pdf (Sheet 6.120: rates replaced on June 1, 2026 shown struck through; new rates effective June 1, 2026) - January rates are the struck-through values",
+    "Order No. PSC-2025-0436-FOF-EI (Nov. 24, 2025), Table 18-1 (DEF) and Table 18-7 (FPUC): https://www.floridapsc.com/pscfiles/library/filings/2025/15230-2025/15230-2025.pdf",
+    "PSC memorandum, July 21, 2026 (Doc. 04530-2026): residential ASC rises from $2.28 to $2.38 per 1,000 kWh effective September 1, 2026",
+    "Florida PSC, 'Total Cost for 1,000 kWh - Residential Service', March 2026 (period January-December 2026): https://www.floridapsc.com/pscfiles/website-files/PDF/Utilities/Electricgas/BillingAdjustments/ba_total-2026_oldmar26.pdf"
+  ],
+  "notes": [
+    "January-May 2026. Base rates: the values the June 1, 2026 sheet replaces. Fuel: 2026 factors from the fuel order. ASC 0.228 until September 1. Other clauses as on Sheet 6.105.",
+    "The PSC's March 2026 table matches: base $101.35 (Dec-Feb) and $90.73 (Mar-Nov) at 1,000 kWh, fuel $41.27, ASC $2.28."
+  ],
+  "customer_charge": {
+    "amount": 14.27,
+    "unit": "per_month"
+  },
+  "tier_break_kwh": 1000,
+  "minimum_base_bill": null,
+  "winter_months": [
+    12,
+    1,
+    2
+  ],
+  "energy_charges_cents_per_kwh": {
+    "base_energy": {
+      "tier1": 7.646,
+      "tier2": 8.409,
+      "winter": {
+        "tier1": 8.708,
+        "tier2": 10.188
+      },
+      "group": "base"
+    },
+    "fuel": {
+      "tier1": 4.127,
+      "tier2": 5.197,
+      "group": "clause"
+    },
+    "conservation": {
+      "tier1": 0.386,
+      "tier2": 0.386,
+      "group": "clause"
+    },
+    "capacity": {
+      "tier1": 0.133,
+      "tier2": 0.133,
+      "group": "clause"
+    },
+    "environmental": {
+      "tier1": 0.04,
+      "tier2": 0.04,
+      "group": "clause"
+    },
+    "asset_securitization": {
+      "tier1": 0.228,
+      "tier2": 0.228,
+      "group": "clause"
+    },
+    "storm_protection": {
+      "tier1": 0.936,
+      "tier2": 0.936,
+      "group": "clause"
+    }
+  },
+  "version": "duke_rs1@2026-01",
+  "months_documented": [
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05"
+  ],
+  "months_inferred": []
+}

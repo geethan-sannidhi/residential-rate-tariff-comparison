@@ -20,7 +20,11 @@ Bill = customer charge + demand-level charge (OUC only) + sum over charges of (t
 ## Hand-check example (Duke, 1,000 kWh, January)
 8.805 + 3.465 + 0.386 + 0.133 + 0.040 + 0.238 + 0.936 = 14.003 cents/kWh -> $140.03; plus $14.43 = **$154.46**.
 
+## Rate history
+`data/history/` holds each investor-owned schedule's 2026 rate versions (same format as `data/*.json`) with the months each is documented for. They exist to validate the calculator against 2026 published bills (`docs/BILL_VALIDATION.md`); the comparison tools use the current rates in `data/`.
+
 ## Open items
+- **Duke base-rate timing.** Duke filed its second 2026 solar base-rate change as effective September 1, but the PSC's September 1 table and FMEA's September bills still use the June base rates; the PSC's October 1 table is the first to show the new ones.
 - **Duke fuel.** The PSC's October 1, 2026 summary shows Duke fuel at $41.27 per 1,000 kWh, which equals Duke's January-May 2026 factor; Duke's Sheet 6.105 effective September 1, 2026 shows 3.465 cents ($34.65). The tool follows the tariff sheet. If a later mid-course change raised fuel again, `data/duke_rs1.json` needs updating.
 - **Municipal effective dates.** Tallahassee's page has no date, and JEA, Tallahassee and OUC all changed rates in fall 2026, after the latest independent comparison.
 

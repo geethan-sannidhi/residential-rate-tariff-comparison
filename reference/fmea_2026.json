@@ -1,0 +1,1355 @@
+{
+ "_about": "Residential bills published in the Florida Municipal Electric Association's monthly Electric Bill Comparison, 2026 editions, for the five investor-owned schedules. 'total' is the bill before gross receipts tax and franchise fees (FMEA's 'Total' column; its final column adding average franchise fees is not used). Extracted with pdftotext.",
+ "rows": [
+  {
+   "edition": "2026-01",
+   "tariff": "duke_rs1",
+   "kwh": 1000,
+   "customer_charge": 14.27,
+   "base_incl_cc": 151.04,
+   "fuel": 41.27,
+   "total": 192.31,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_January_Rates.pdf"
+  },
+  {
+   "edition": "2026-01",
+   "tariff": "duke_rs1",
+   "kwh": 1200,
+   "customer_charge": 14.27,
+   "base_incl_cc": 181.35,
+   "fuel": 51.66,
+   "total": 233.01,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_January_Rates.pdf"
+  },
+  {
+   "edition": "2026-01",
+   "tariff": "duke_rs1",
+   "kwh": 2500,
+   "customer_charge": 14.27,
+   "base_incl_cc": 378.4,
+   "fuel": 119.23,
+   "total": 497.63,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_January_Rates.pdf"
+  },
+  {
+   "edition": "2026-02",
+   "tariff": "duke_rs1",
+   "kwh": 1000,
+   "customer_charge": 14.27,
+   "base_incl_cc": 118.64,
+   "fuel": 41.27,
+   "total": 159.91,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_February_Rates.pdf"
+  },
+  {
+   "edition": "2026-02",
+   "tariff": "duke_rs1",
+   "kwh": 1200,
+   "customer_charge": 14.27,
+   "base_incl_cc": 142.47,
+   "fuel": 51.66,
+   "total": 194.13,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_February_Rates.pdf"
+  },
+  {
+   "edition": "2026-02",
+   "tariff": "duke_rs1",
+   "kwh": 2500,
+   "customer_charge": 14.27,
+   "base_incl_cc": 297.4,
+   "fuel": 119.23,
+   "total": 416.63,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_February_Rates.pdf"
+  },
+  {
+   "edition": "2026-03",
+   "tariff": "duke_rs1",
+   "kwh": 1000,
+   "customer_charge": 14.27,
+   "base_incl_cc": 107.96,
+   "fuel": 41.27,
+   "total": 149.23,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_March_Rates.pdf"
+  },
+  {
+   "edition": "2026-03",
+   "tariff": "duke_rs1",
+   "kwh": 1200,
+   "customer_charge": 14.27,
+   "base_incl_cc": 128.22,
+   "fuel": 51.66,
+   "total": 179.88,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_March_Rates.pdf"
+  },
+  {
+   "edition": "2026-03",
+   "tariff": "duke_rs1",
+   "kwh": 2500,
+   "customer_charge": 14.27,
+   "base_incl_cc": 259.94,
+   "fuel": 119.23,
+   "total": 379.17,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_March_Rates.pdf"
+  },
+  {
+   "edition": "2026-04",
+   "tariff": "duke_rs1",
+   "kwh": 1000,
+   "customer_charge": 14.27,
+   "base_incl_cc": 107.96,
+   "fuel": 41.27,
+   "total": 149.23,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_April_Rates.pdf"
+  },
+  {
+   "edition": "2026-04",
+   "tariff": "duke_rs1",
+   "kwh": 1200,
+   "customer_charge": 14.27,
+   "base_incl_cc": 128.22,
+   "fuel": 51.66,
+   "total": 179.88,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_April_Rates.pdf"
+  },
+  {
+   "edition": "2026-04",
+   "tariff": "duke_rs1",
+   "kwh": 2500,
+   "customer_charge": 14.27,
+   "base_incl_cc": 259.94,
+   "fuel": 119.23,
+   "total": 379.17,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_April_Rates.pdf"
+  },
+  {
+   "edition": "2026-05",
+   "tariff": "duke_rs1",
+   "kwh": 1000,
+   "customer_charge": 14.27,
+   "base_incl_cc": 107.96,
+   "fuel": 41.27,
+   "total": 149.23,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_May_Rates.pdf"
+  },
+  {
+   "edition": "2026-05",
+   "tariff": "duke_rs1",
+   "kwh": 1200,
+   "customer_charge": 14.27,
+   "base_incl_cc": 128.22,
+   "fuel": 51.66,
+   "total": 179.88,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_May_Rates.pdf"
+  },
+  {
+   "edition": "2026-05",
+   "tariff": "duke_rs1",
+   "kwh": 2500,
+   "customer_charge": 14.27,
+   "base_incl_cc": 259.94,
+   "fuel": 119.23,
+   "total": 379.17,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_May_Rates.pdf"
+  },
+  {
+   "edition": "2026-06",
+   "tariff": "duke_rs1",
+   "kwh": 1000,
+   "customer_charge": 14.35,
+   "base_incl_cc": 108.44,
+   "fuel": 34.65,
+   "total": 143.09,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_June_Rates.pdf"
+  },
+  {
+   "edition": "2026-06",
+   "tariff": "duke_rs1",
+   "kwh": 1200,
+   "customer_charge": 14.35,
+   "base_incl_cc": 128.79,
+   "fuel": 43.72,
+   "total": 172.51,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_June_Rates.pdf"
+  },
+  {
+   "edition": "2026-06",
+   "tariff": "duke_rs1",
+   "kwh": 2500,
+   "customer_charge": 14.35,
+   "base_incl_cc": 261.08,
+   "fuel": 102.68,
+   "total": 363.76,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_June_Rates.pdf"
+  },
+  {
+   "edition": "2026-07",
+   "tariff": "duke_rs1",
+   "kwh": 1000,
+   "customer_charge": 14.35,
+   "base_incl_cc": 108.44,
+   "fuel": 34.65,
+   "total": 143.09,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_July_Rates.pdf"
+  },
+  {
+   "edition": "2026-07",
+   "tariff": "duke_rs1",
+   "kwh": 1200,
+   "customer_charge": 14.35,
+   "base_incl_cc": 128.79,
+   "fuel": 43.72,
+   "total": 172.51,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_July_Rates.pdf"
+  },
+  {
+   "edition": "2026-07",
+   "tariff": "duke_rs1",
+   "kwh": 2500,
+   "customer_charge": 14.35,
+   "base_incl_cc": 261.08,
+   "fuel": 102.68,
+   "total": 363.76,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_July_Rates.pdf"
+  },
+  {
+   "edition": "2026-08",
+   "tariff": "duke_rs1",
+   "kwh": 1000,
+   "customer_charge": 14.35,
+   "base_incl_cc": 108.44,
+   "fuel": 34.65,
+   "total": 143.09,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_August_Rates.pdf"
+  },
+  {
+   "edition": "2026-08",
+   "tariff": "duke_rs1",
+   "kwh": 1200,
+   "customer_charge": 14.35,
+   "base_incl_cc": 128.79,
+   "fuel": 43.72,
+   "total": 172.51,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_August_Rates.pdf"
+  },
+  {
+   "edition": "2026-08",
+   "tariff": "duke_rs1",
+   "kwh": 2500,
+   "customer_charge": 14.35,
+   "base_incl_cc": 261.08,
+   "fuel": 102.68,
+   "total": 363.76,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_August_Rates.pdf"
+  },
+  {
+   "edition": "2026-09",
+   "tariff": "duke_rs1",
+   "kwh": 1000,
+   "customer_charge": 14.35,
+   "base_incl_cc": 108.54,
+   "fuel": 34.65,
+   "total": 143.19,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_September_Rates.pdf"
+  },
+  {
+   "edition": "2026-09",
+   "tariff": "duke_rs1",
+   "kwh": 1200,
+   "customer_charge": 14.35,
+   "base_incl_cc": 128.91,
+   "fuel": 43.72,
+   "total": 172.63,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_September_Rates.pdf"
+  },
+  {
+   "edition": "2026-09",
+   "tariff": "duke_rs1",
+   "kwh": 2500,
+   "customer_charge": 14.35,
+   "base_incl_cc": 261.33,
+   "fuel": 102.68,
+   "total": 364.01,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_September_Rates.pdf"
+  },
+  {
+   "edition": "2026-01",
+   "tariff": "fpl_nwfl_rs1",
+   "kwh": 1000,
+   "customer_charge": 10.52,
+   "base_incl_cc": 98.83,
+   "fuel": 28.93,
+   "total": 137.71,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_January_Rates.pdf"
+  },
+  {
+   "edition": "2026-01",
+   "tariff": "fpl_nwfl_rs1",
+   "kwh": 1200,
+   "customer_charge": 10.52,
+   "base_incl_cc": 118.49,
+   "fuel": 36.72,
+   "total": 167.15,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_January_Rates.pdf"
+  },
+  {
+   "edition": "2026-01",
+   "tariff": "fpl_nwfl_rs1",
+   "kwh": 2500,
+   "customer_charge": 10.52,
+   "base_incl_cc": 246.31,
+   "fuel": 87.33,
+   "total": 358.52,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_January_Rates.pdf"
+  },
+  {
+   "edition": "2026-02",
+   "tariff": "fpl_nwfl_rs1",
+   "kwh": 1000,
+   "customer_charge": 10.52,
+   "base_incl_cc": 98.83,
+   "fuel": 28.93,
+   "total": 137.71,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_February_Rates.pdf"
+  },
+  {
+   "edition": "2026-02",
+   "tariff": "fpl_nwfl_rs1",
+   "kwh": 1200,
+   "customer_charge": 10.52,
+   "base_incl_cc": 118.49,
+   "fuel": 36.72,
+   "total": 167.15,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_February_Rates.pdf"
+  },
+  {
+   "edition": "2026-02",
+   "tariff": "fpl_nwfl_rs1",
+   "kwh": 2500,
+   "customer_charge": 10.52,
+   "base_incl_cc": 246.31,
+   "fuel": 87.33,
+   "total": 358.52,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_February_Rates.pdf"
+  },
+  {
+   "edition": "2026-03",
+   "tariff": "fpl_nwfl_rs1",
+   "kwh": 1000,
+   "customer_charge": 10.52,
+   "base_incl_cc": 98.83,
+   "fuel": 28.93,
+   "total": 137.71,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_March_Rates.pdf"
+  },
+  {
+   "edition": "2026-03",
+   "tariff": "fpl_nwfl_rs1",
+   "kwh": 1200,
+   "customer_charge": 10.52,
+   "base_incl_cc": 118.49,
+   "fuel": 36.72,
+   "total": 167.15,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_March_Rates.pdf"
+  },
+  {
+   "edition": "2026-03",
+   "tariff": "fpl_nwfl_rs1",
+   "kwh": 2500,
+   "customer_charge": 10.52,
+   "base_incl_cc": 246.31,
+   "fuel": 87.33,
+   "total": 358.52,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_March_Rates.pdf"
+  },
+  {
+   "edition": "2026-04",
+   "tariff": "fpl_nwfl_rs1",
+   "kwh": 1000,
+   "customer_charge": 10.52,
+   "base_incl_cc": 98.83,
+   "fuel": 28.93,
+   "total": 137.71,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_April_Rates.pdf"
+  },
+  {
+   "edition": "2026-04",
+   "tariff": "fpl_nwfl_rs1",
+   "kwh": 1200,
+   "customer_charge": 10.52,
+   "base_incl_cc": 118.49,
+   "fuel": 36.72,
+   "total": 167.15,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_April_Rates.pdf"
+  },
+  {
+   "edition": "2026-04",
+   "tariff": "fpl_nwfl_rs1",
+   "kwh": 2500,
+   "customer_charge": 10.52,
+   "base_incl_cc": 246.31,
+   "fuel": 87.33,
+   "total": 358.52,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_April_Rates.pdf"
+  },
+  {
+   "edition": "2026-05",
+   "tariff": "fpl_nwfl_rs1",
+   "kwh": 1000,
+   "customer_charge": 10.52,
+   "base_incl_cc": 98.83,
+   "fuel": 28.93,
+   "total": 137.71,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_May_Rates.pdf"
+  },
+  {
+   "edition": "2026-05",
+   "tariff": "fpl_nwfl_rs1",
+   "kwh": 1200,
+   "customer_charge": 10.52,
+   "base_incl_cc": 118.49,
+   "fuel": 36.72,
+   "total": 167.15,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_May_Rates.pdf"
+  },
+  {
+   "edition": "2026-05",
+   "tariff": "fpl_nwfl_rs1",
+   "kwh": 2500,
+   "customer_charge": 10.52,
+   "base_incl_cc": 246.31,
+   "fuel": 87.33,
+   "total": 358.52,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_May_Rates.pdf"
+  },
+  {
+   "edition": "2026-06",
+   "tariff": "fpl_nwfl_rs1",
+   "kwh": 1000,
+   "customer_charge": 10.52,
+   "base_incl_cc": 98.83,
+   "fuel": 28.93,
+   "total": 137.71,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_June_Rates.pdf"
+  },
+  {
+   "edition": "2026-06",
+   "tariff": "fpl_nwfl_rs1",
+   "kwh": 1200,
+   "customer_charge": 10.52,
+   "base_incl_cc": 118.49,
+   "fuel": 36.72,
+   "total": 167.15,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_June_Rates.pdf"
+  },
+  {
+   "edition": "2026-06",
+   "tariff": "fpl_nwfl_rs1",
+   "kwh": 2500,
+   "customer_charge": 10.52,
+   "base_incl_cc": 246.31,
+   "fuel": 87.33,
+   "total": 358.52,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_June_Rates.pdf"
+  },
+  {
+   "edition": "2026-07",
+   "tariff": "fpl_nwfl_rs1",
+   "kwh": 1000,
+   "customer_charge": 10.52,
+   "base_incl_cc": 98.83,
+   "fuel": 28.93,
+   "total": 137.71,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_July_Rates.pdf"
+  },
+  {
+   "edition": "2026-07",
+   "tariff": "fpl_nwfl_rs1",
+   "kwh": 1200,
+   "customer_charge": 10.52,
+   "base_incl_cc": 118.49,
+   "fuel": 36.72,
+   "total": 167.15,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_July_Rates.pdf"
+  },
+  {
+   "edition": "2026-07",
+   "tariff": "fpl_nwfl_rs1",
+   "kwh": 2500,
+   "customer_charge": 10.52,
+   "base_incl_cc": 246.31,
+   "fuel": 87.33,
+   "total": 358.52,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_July_Rates.pdf"
+  },
+  {
+   "edition": "2026-08",
+   "tariff": "fpl_nwfl_rs1",
+   "kwh": 1000,
+   "customer_charge": 10.52,
+   "base_incl_cc": 98.83,
+   "fuel": 28.93,
+   "total": 137.71,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_August_Rates.pdf"
+  },
+  {
+   "edition": "2026-08",
+   "tariff": "fpl_nwfl_rs1",
+   "kwh": 1200,
+   "customer_charge": 10.52,
+   "base_incl_cc": 118.49,
+   "fuel": 36.72,
+   "total": 167.15,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_August_Rates.pdf"
+  },
+  {
+   "edition": "2026-08",
+   "tariff": "fpl_nwfl_rs1",
+   "kwh": 2500,
+   "customer_charge": 10.52,
+   "base_incl_cc": 246.31,
+   "fuel": 87.33,
+   "total": 358.52,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_August_Rates.pdf"
+  },
+  {
+   "edition": "2026-09",
+   "tariff": "fpl_nwfl_rs1",
+   "kwh": 1000,
+   "customer_charge": 10.52,
+   "base_incl_cc": 90.86,
+   "fuel": 28.93,
+   "total": 129.74,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_September_Rates.pdf"
+  },
+  {
+   "edition": "2026-09",
+   "tariff": "fpl_nwfl_rs1",
+   "kwh": 1200,
+   "customer_charge": 10.52,
+   "base_incl_cc": 108.93,
+   "fuel": 36.72,
+   "total": 157.59,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_September_Rates.pdf"
+  },
+  {
+   "edition": "2026-09",
+   "tariff": "fpl_nwfl_rs1",
+   "kwh": 2500,
+   "customer_charge": 10.52,
+   "base_incl_cc": 226.37,
+   "fuel": 87.33,
+   "total": 338.58,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_September_Rates.pdf"
+  },
+  {
+   "edition": "2026-01",
+   "tariff": "fpl_rs1",
+   "kwh": 1000,
+   "customer_charge": 10.52,
+   "base_incl_cc": 94.22,
+   "fuel": 28.93,
+   "total": 133.1,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_January_Rates.pdf"
+  },
+  {
+   "edition": "2026-01",
+   "tariff": "fpl_rs1",
+   "kwh": 1200,
+   "customer_charge": 10.52,
+   "base_incl_cc": 112.96,
+   "fuel": 36.72,
+   "total": 161.62,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_January_Rates.pdf"
+  },
+  {
+   "edition": "2026-01",
+   "tariff": "fpl_rs1",
+   "kwh": 2500,
+   "customer_charge": 10.52,
+   "base_incl_cc": 234.78,
+   "fuel": 87.33,
+   "total": 346.99,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_January_Rates.pdf"
+  },
+  {
+   "edition": "2026-02",
+   "tariff": "fpl_rs1",
+   "kwh": 1000,
+   "customer_charge": 10.52,
+   "base_incl_cc": 94.22,
+   "fuel": 28.93,
+   "total": 133.1,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_February_Rates.pdf"
+  },
+  {
+   "edition": "2026-02",
+   "tariff": "fpl_rs1",
+   "kwh": 1200,
+   "customer_charge": 10.52,
+   "base_incl_cc": 112.96,
+   "fuel": 36.72,
+   "total": 161.62,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_February_Rates.pdf"
+  },
+  {
+   "edition": "2026-02",
+   "tariff": "fpl_rs1",
+   "kwh": 2500,
+   "customer_charge": 10.52,
+   "base_incl_cc": 234.78,
+   "fuel": 87.33,
+   "total": 346.99,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_February_Rates.pdf"
+  },
+  {
+   "edition": "2026-03",
+   "tariff": "fpl_rs1",
+   "kwh": 1000,
+   "customer_charge": 10.52,
+   "base_incl_cc": 94.22,
+   "fuel": 28.93,
+   "total": 133.1,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_March_Rates.pdf"
+  },
+  {
+   "edition": "2026-03",
+   "tariff": "fpl_rs1",
+   "kwh": 1200,
+   "customer_charge": 10.52,
+   "base_incl_cc": 112.96,
+   "fuel": 36.72,
+   "total": 161.62,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_March_Rates.pdf"
+  },
+  {
+   "edition": "2026-03",
+   "tariff": "fpl_rs1",
+   "kwh": 2500,
+   "customer_charge": 10.52,
+   "base_incl_cc": 234.78,
+   "fuel": 87.33,
+   "total": 346.99,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_March_Rates.pdf"
+  },
+  {
+   "edition": "2026-04",
+   "tariff": "fpl_rs1",
+   "kwh": 1000,
+   "customer_charge": 10.52,
+   "base_incl_cc": 94.22,
+   "fuel": 28.93,
+   "total": 133.1,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_April_Rates.pdf"
+  },
+  {
+   "edition": "2026-04",
+   "tariff": "fpl_rs1",
+   "kwh": 1200,
+   "customer_charge": 10.52,
+   "base_incl_cc": 112.96,
+   "fuel": 36.72,
+   "total": 161.62,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_April_Rates.pdf"
+  },
+  {
+   "edition": "2026-04",
+   "tariff": "fpl_rs1",
+   "kwh": 2500,
+   "customer_charge": 10.52,
+   "base_incl_cc": 234.78,
+   "fuel": 87.33,
+   "total": 346.99,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_April_Rates.pdf"
+  },
+  {
+   "edition": "2026-05",
+   "tariff": "fpl_rs1",
+   "kwh": 1000,
+   "customer_charge": 10.52,
+   "base_incl_cc": 94.22,
+   "fuel": 28.93,
+   "total": 133.1,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_May_Rates.pdf"
+  },
+  {
+   "edition": "2026-05",
+   "tariff": "fpl_rs1",
+   "kwh": 1200,
+   "customer_charge": 10.52,
+   "base_incl_cc": 112.96,
+   "fuel": 36.72,
+   "total": 161.62,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_May_Rates.pdf"
+  },
+  {
+   "edition": "2026-05",
+   "tariff": "fpl_rs1",
+   "kwh": 2500,
+   "customer_charge": 10.52,
+   "base_incl_cc": 234.78,
+   "fuel": 87.33,
+   "total": 346.99,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_May_Rates.pdf"
+  },
+  {
+   "edition": "2026-06",
+   "tariff": "fpl_rs1",
+   "kwh": 1000,
+   "customer_charge": 10.52,
+   "base_incl_cc": 94.22,
+   "fuel": 28.93,
+   "total": 133.1,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_June_Rates.pdf"
+  },
+  {
+   "edition": "2026-06",
+   "tariff": "fpl_rs1",
+   "kwh": 1200,
+   "customer_charge": 10.52,
+   "base_incl_cc": 112.96,
+   "fuel": 36.72,
+   "total": 161.62,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_June_Rates.pdf"
+  },
+  {
+   "edition": "2026-06",
+   "tariff": "fpl_rs1",
+   "kwh": 2500,
+   "customer_charge": 10.52,
+   "base_incl_cc": 234.78,
+   "fuel": 87.33,
+   "total": 346.99,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_June_Rates.pdf"
+  },
+  {
+   "edition": "2026-07",
+   "tariff": "fpl_rs1",
+   "kwh": 1000,
+   "customer_charge": 10.52,
+   "base_incl_cc": 94.22,
+   "fuel": 28.93,
+   "total": 133.1,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_July_Rates.pdf"
+  },
+  {
+   "edition": "2026-07",
+   "tariff": "fpl_rs1",
+   "kwh": 1200,
+   "customer_charge": 10.52,
+   "base_incl_cc": 112.96,
+   "fuel": 36.72,
+   "total": 161.62,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_July_Rates.pdf"
+  },
+  {
+   "edition": "2026-07",
+   "tariff": "fpl_rs1",
+   "kwh": 2500,
+   "customer_charge": 10.52,
+   "base_incl_cc": 234.78,
+   "fuel": 87.33,
+   "total": 346.99,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_July_Rates.pdf"
+  },
+  {
+   "edition": "2026-08",
+   "tariff": "fpl_rs1",
+   "kwh": 1000,
+   "customer_charge": 10.52,
+   "base_incl_cc": 94.22,
+   "fuel": 28.93,
+   "total": 133.1,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_August_Rates.pdf"
+  },
+  {
+   "edition": "2026-08",
+   "tariff": "fpl_rs1",
+   "kwh": 1200,
+   "customer_charge": 10.52,
+   "base_incl_cc": 112.96,
+   "fuel": 36.72,
+   "total": 161.62,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_August_Rates.pdf"
+  },
+  {
+   "edition": "2026-08",
+   "tariff": "fpl_rs1",
+   "kwh": 2500,
+   "customer_charge": 10.52,
+   "base_incl_cc": 234.78,
+   "fuel": 87.33,
+   "total": 346.99,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_August_Rates.pdf"
+  },
+  {
+   "edition": "2026-09",
+   "tariff": "fpl_rs1",
+   "kwh": 1000,
+   "customer_charge": 10.52,
+   "base_incl_cc": 86.25,
+   "fuel": 28.93,
+   "total": 125.13,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_September_Rates.pdf"
+  },
+  {
+   "edition": "2026-09",
+   "tariff": "fpl_rs1",
+   "kwh": 1200,
+   "customer_charge": 10.52,
+   "base_incl_cc": 103.4,
+   "fuel": 36.72,
+   "total": 152.06,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_September_Rates.pdf"
+  },
+  {
+   "edition": "2026-09",
+   "tariff": "fpl_rs1",
+   "kwh": 2500,
+   "customer_charge": 10.52,
+   "base_incl_cc": 214.85,
+   "fuel": 87.33,
+   "total": 327.06,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_September_Rates.pdf"
+  },
+  {
+   "edition": "2026-01",
+   "tariff": "fpuc_rs",
+   "kwh": 1000,
+   "customer_charge": 24.4,
+   "base_incl_cc": 51.36,
+   "fuel": 88.2,
+   "total": 159.33,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_January_Rates.pdf"
+  },
+  {
+   "edition": "2026-01",
+   "tariff": "fpuc_rs",
+   "kwh": 1200,
+   "customer_charge": 24.4,
+   "base_incl_cc": 60.19,
+   "fuel": 108.34,
+   "total": 192.25,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_January_Rates.pdf"
+  },
+  {
+   "edition": "2026-01",
+   "tariff": "fpuc_rs",
+   "kwh": 2500,
+   "customer_charge": 24.4,
+   "base_incl_cc": 117.59,
+   "fuel": 239.25,
+   "total": 406.27,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_January_Rates.pdf"
+  },
+  {
+   "edition": "2026-02",
+   "tariff": "fpuc_rs",
+   "kwh": 1000,
+   "customer_charge": 24.4,
+   "base_incl_cc": 51.36,
+   "fuel": 88.2,
+   "total": 159.33,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_February_Rates.pdf"
+  },
+  {
+   "edition": "2026-02",
+   "tariff": "fpuc_rs",
+   "kwh": 1200,
+   "customer_charge": 24.4,
+   "base_incl_cc": 60.19,
+   "fuel": 108.34,
+   "total": 192.25,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_February_Rates.pdf"
+  },
+  {
+   "edition": "2026-02",
+   "tariff": "fpuc_rs",
+   "kwh": 2500,
+   "customer_charge": 24.4,
+   "base_incl_cc": 117.59,
+   "fuel": 239.25,
+   "total": 406.27,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_February_Rates.pdf"
+  },
+  {
+   "edition": "2026-03",
+   "tariff": "fpuc_rs",
+   "kwh": 1000,
+   "customer_charge": 24.4,
+   "base_incl_cc": 51.36,
+   "fuel": 88.2,
+   "total": 159.33,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_March_Rates.pdf"
+  },
+  {
+   "edition": "2026-03",
+   "tariff": "fpuc_rs",
+   "kwh": 1200,
+   "customer_charge": 24.4,
+   "base_incl_cc": 60.19,
+   "fuel": 108.34,
+   "total": 192.25,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_March_Rates.pdf"
+  },
+  {
+   "edition": "2026-03",
+   "tariff": "fpuc_rs",
+   "kwh": 2500,
+   "customer_charge": 24.4,
+   "base_incl_cc": 117.59,
+   "fuel": 239.25,
+   "total": 406.27,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_March_Rates.pdf"
+  },
+  {
+   "edition": "2026-04",
+   "tariff": "fpuc_rs",
+   "kwh": 1000,
+   "customer_charge": 24.4,
+   "base_incl_cc": 53.07,
+   "fuel": 88.2,
+   "total": 161.04,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_April_Rates.pdf"
+  },
+  {
+   "edition": "2026-04",
+   "tariff": "fpuc_rs",
+   "kwh": 1200,
+   "customer_charge": 24.4,
+   "base_incl_cc": 62.46,
+   "fuel": 108.34,
+   "total": 194.52,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_April_Rates.pdf"
+  },
+  {
+   "edition": "2026-04",
+   "tariff": "fpuc_rs",
+   "kwh": 2500,
+   "customer_charge": 24.4,
+   "base_incl_cc": 123.5,
+   "fuel": 239.25,
+   "total": 412.18,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_April_Rates.pdf"
+  },
+  {
+   "edition": "2026-05",
+   "tariff": "fpuc_rs",
+   "kwh": 1000,
+   "customer_charge": 24.4,
+   "base_incl_cc": 53.07,
+   "fuel": 88.2,
+   "total": 161.04,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_May_Rates.pdf"
+  },
+  {
+   "edition": "2026-05",
+   "tariff": "fpuc_rs",
+   "kwh": 1200,
+   "customer_charge": 24.4,
+   "base_incl_cc": 62.46,
+   "fuel": 108.34,
+   "total": 194.52,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_May_Rates.pdf"
+  },
+  {
+   "edition": "2026-05",
+   "tariff": "fpuc_rs",
+   "kwh": 2500,
+   "customer_charge": 24.4,
+   "base_incl_cc": 123.5,
+   "fuel": 239.25,
+   "total": 412.18,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_May_Rates.pdf"
+  },
+  {
+   "edition": "2026-06",
+   "tariff": "fpuc_rs",
+   "kwh": 1000,
+   "customer_charge": 24.4,
+   "base_incl_cc": 53.07,
+   "fuel": 88.2,
+   "total": 161.04,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_June_Rates.pdf"
+  },
+  {
+   "edition": "2026-06",
+   "tariff": "fpuc_rs",
+   "kwh": 1200,
+   "customer_charge": 24.4,
+   "base_incl_cc": 62.46,
+   "fuel": 108.34,
+   "total": 194.52,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_June_Rates.pdf"
+  },
+  {
+   "edition": "2026-06",
+   "tariff": "fpuc_rs",
+   "kwh": 2500,
+   "customer_charge": 24.4,
+   "base_incl_cc": 123.5,
+   "fuel": 239.25,
+   "total": 412.18,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_June_Rates.pdf"
+  },
+  {
+   "edition": "2026-07",
+   "tariff": "fpuc_rs",
+   "kwh": 1000,
+   "customer_charge": 24.4,
+   "base_incl_cc": 53.07,
+   "fuel": 88.2,
+   "total": 161.04,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_July_Rates.pdf"
+  },
+  {
+   "edition": "2026-07",
+   "tariff": "fpuc_rs",
+   "kwh": 1200,
+   "customer_charge": 24.4,
+   "base_incl_cc": 62.46,
+   "fuel": 108.34,
+   "total": 194.52,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_July_Rates.pdf"
+  },
+  {
+   "edition": "2026-07",
+   "tariff": "fpuc_rs",
+   "kwh": 2500,
+   "customer_charge": 24.4,
+   "base_incl_cc": 123.5,
+   "fuel": 239.25,
+   "total": 412.18,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_July_Rates.pdf"
+  },
+  {
+   "edition": "2026-08",
+   "tariff": "fpuc_rs",
+   "kwh": 1000,
+   "customer_charge": 24.4,
+   "base_incl_cc": 53.07,
+   "fuel": 88.2,
+   "total": 161.04,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_August_Rates.pdf"
+  },
+  {
+   "edition": "2026-08",
+   "tariff": "fpuc_rs",
+   "kwh": 1200,
+   "customer_charge": 24.4,
+   "base_incl_cc": 62.46,
+   "fuel": 108.34,
+   "total": 194.52,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_August_Rates.pdf"
+  },
+  {
+   "edition": "2026-08",
+   "tariff": "fpuc_rs",
+   "kwh": 2500,
+   "customer_charge": 24.4,
+   "base_incl_cc": 123.5,
+   "fuel": 239.25,
+   "total": 412.18,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_August_Rates.pdf"
+  },
+  {
+   "edition": "2026-09",
+   "tariff": "fpuc_rs",
+   "kwh": 1000,
+   "customer_charge": 24.4,
+   "base_incl_cc": 53.07,
+   "fuel": 88.2,
+   "total": 161.04,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_September_Rates.pdf"
+  },
+  {
+   "edition": "2026-09",
+   "tariff": "fpuc_rs",
+   "kwh": 1200,
+   "customer_charge": 24.4,
+   "base_incl_cc": 62.46,
+   "fuel": 108.34,
+   "total": 194.52,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_September_Rates.pdf"
+  },
+  {
+   "edition": "2026-09",
+   "tariff": "fpuc_rs",
+   "kwh": 2500,
+   "customer_charge": 24.4,
+   "base_incl_cc": 123.5,
+   "fuel": 239.25,
+   "total": 412.18,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_September_Rates.pdf"
+  },
+  {
+   "edition": "2026-01",
+   "tariff": "teco_rs",
+   "kwh": 1000,
+   "customer_charge": 13.5,
+   "base_incl_cc": 102.98,
+   "fuel": 32.1,
+   "total": 172.47,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_January_Rates.pdf"
+  },
+  {
+   "edition": "2026-01",
+   "tariff": "teco_rs",
+   "kwh": 1200,
+   "customer_charge": 13.5,
+   "base_incl_cc": 122.88,
+   "fuel": 40.52,
+   "total": 208.26,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_January_Rates.pdf"
+  },
+  {
+   "edition": "2026-01",
+   "tariff": "teco_rs",
+   "kwh": 2500,
+   "customer_charge": 13.5,
+   "base_incl_cc": 252.2,
+   "fuel": 95.25,
+   "total": 440.94,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_January_Rates.pdf"
+  },
+  {
+   "edition": "2026-02",
+   "tariff": "teco_rs",
+   "kwh": 1000,
+   "customer_charge": 13.5,
+   "base_incl_cc": 102.98,
+   "fuel": 32.1,
+   "total": 172.47,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_February_Rates.pdf"
+  },
+  {
+   "edition": "2026-02",
+   "tariff": "teco_rs",
+   "kwh": 1200,
+   "customer_charge": 13.5,
+   "base_incl_cc": 122.88,
+   "fuel": 40.52,
+   "total": 208.26,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_February_Rates.pdf"
+  },
+  {
+   "edition": "2026-02",
+   "tariff": "teco_rs",
+   "kwh": 2500,
+   "customer_charge": 13.5,
+   "base_incl_cc": 252.2,
+   "fuel": 95.25,
+   "total": 440.94,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_February_Rates.pdf"
+  },
+  {
+   "edition": "2026-03",
+   "tariff": "teco_rs",
+   "kwh": 1000,
+   "customer_charge": 13.5,
+   "base_incl_cc": 102.98,
+   "fuel": 32.1,
+   "total": 172.47,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_March_Rates.pdf"
+  },
+  {
+   "edition": "2026-03",
+   "tariff": "teco_rs",
+   "kwh": 1200,
+   "customer_charge": 13.5,
+   "base_incl_cc": 122.88,
+   "fuel": 40.52,
+   "total": 208.26,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_March_Rates.pdf"
+  },
+  {
+   "edition": "2026-03",
+   "tariff": "teco_rs",
+   "kwh": 2500,
+   "customer_charge": 13.5,
+   "base_incl_cc": 252.2,
+   "fuel": 95.25,
+   "total": 440.94,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_March_Rates.pdf"
+  },
+  {
+   "edition": "2026-04",
+   "tariff": "teco_rs",
+   "kwh": 1000,
+   "customer_charge": 13.5,
+   "base_incl_cc": 102.98,
+   "fuel": 32.1,
+   "total": 172.47,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_April_Rates.pdf"
+  },
+  {
+   "edition": "2026-04",
+   "tariff": "teco_rs",
+   "kwh": 1200,
+   "customer_charge": 13.5,
+   "base_incl_cc": 122.88,
+   "fuel": 40.52,
+   "total": 208.26,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_April_Rates.pdf"
+  },
+  {
+   "edition": "2026-04",
+   "tariff": "teco_rs",
+   "kwh": 2500,
+   "customer_charge": 13.5,
+   "base_incl_cc": 252.2,
+   "fuel": 95.25,
+   "total": 440.94,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_April_Rates.pdf"
+  },
+  {
+   "edition": "2026-05",
+   "tariff": "teco_rs",
+   "kwh": 1000,
+   "customer_charge": 13.5,
+   "base_incl_cc": 102.98,
+   "fuel": 32.1,
+   "total": 172.47,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_May_Rates.pdf"
+  },
+  {
+   "edition": "2026-05",
+   "tariff": "teco_rs",
+   "kwh": 1200,
+   "customer_charge": 13.5,
+   "base_incl_cc": 122.88,
+   "fuel": 40.52,
+   "total": 208.26,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_May_Rates.pdf"
+  },
+  {
+   "edition": "2026-05",
+   "tariff": "teco_rs",
+   "kwh": 2500,
+   "customer_charge": 13.5,
+   "base_incl_cc": 252.2,
+   "fuel": 95.25,
+   "total": 440.94,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_May_Rates.pdf"
+  },
+  {
+   "edition": "2026-06",
+   "tariff": "teco_rs",
+   "kwh": 1000,
+   "customer_charge": 13.5,
+   "base_incl_cc": 102.98,
+   "fuel": 32.1,
+   "total": 172.47,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_June_Rates.pdf"
+  },
+  {
+   "edition": "2026-06",
+   "tariff": "teco_rs",
+   "kwh": 1200,
+   "customer_charge": 13.5,
+   "base_incl_cc": 122.88,
+   "fuel": 40.52,
+   "total": 208.26,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_June_Rates.pdf"
+  },
+  {
+   "edition": "2026-06",
+   "tariff": "teco_rs",
+   "kwh": 2500,
+   "customer_charge": 13.5,
+   "base_incl_cc": 252.2,
+   "fuel": 95.25,
+   "total": 440.94,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_June_Rates.pdf"
+  },
+  {
+   "edition": "2026-07",
+   "tariff": "teco_rs",
+   "kwh": 1000,
+   "customer_charge": 13.5,
+   "base_incl_cc": 102.98,
+   "fuel": 32.1,
+   "total": 172.47,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_July_Rates.pdf"
+  },
+  {
+   "edition": "2026-07",
+   "tariff": "teco_rs",
+   "kwh": 1200,
+   "customer_charge": 13.5,
+   "base_incl_cc": 122.88,
+   "fuel": 40.52,
+   "total": 208.26,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_July_Rates.pdf"
+  },
+  {
+   "edition": "2026-07",
+   "tariff": "teco_rs",
+   "kwh": 2500,
+   "customer_charge": 13.5,
+   "base_incl_cc": 252.2,
+   "fuel": 95.25,
+   "total": 440.94,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_July_Rates.pdf"
+  },
+  {
+   "edition": "2026-08",
+   "tariff": "teco_rs",
+   "kwh": 1000,
+   "customer_charge": 13.5,
+   "base_incl_cc": 102.98,
+   "fuel": 32.1,
+   "total": 152.52,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_August_Rates.pdf"
+  },
+  {
+   "edition": "2026-08",
+   "tariff": "teco_rs",
+   "kwh": 1200,
+   "customer_charge": 13.5,
+   "base_incl_cc": 122.88,
+   "fuel": 40.52,
+   "total": 184.32,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_August_Rates.pdf"
+  },
+  {
+   "edition": "2026-08",
+   "tariff": "teco_rs",
+   "kwh": 2500,
+   "customer_charge": 13.5,
+   "base_incl_cc": 252.2,
+   "fuel": 95.25,
+   "total": 391.06,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_August_Rates.pdf"
+  },
+  {
+   "edition": "2026-09",
+   "tariff": "teco_rs",
+   "kwh": 1000,
+   "customer_charge": 13.5,
+   "base_incl_cc": 102.98,
+   "fuel": 32.1,
+   "total": 152.52,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_September_Rates.pdf"
+  },
+  {
+   "edition": "2026-09",
+   "tariff": "teco_rs",
+   "kwh": 1200,
+   "customer_charge": 13.5,
+   "base_incl_cc": 122.88,
+   "fuel": 40.52,
+   "total": 184.32,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_September_Rates.pdf"
+  },
+  {
+   "edition": "2026-09",
+   "tariff": "teco_rs",
+   "kwh": 2500,
+   "customer_charge": 13.5,
+   "base_incl_cc": 252.2,
+   "fuel": 95.25,
+   "total": 391.06,
+   "source": "https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_September_Rates.pdf"
+  }
+ ]
+}

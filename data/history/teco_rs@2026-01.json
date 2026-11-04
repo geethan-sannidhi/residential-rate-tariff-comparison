@@ -1,0 +1,80 @@
+{
+  "utility": "Tampa Electric (TECO)",
+  "schedule": "RS Residential Service",
+  "effective": "January 2026",
+  "retrieved": "2026-11-04",
+  "sources": [
+    "https://www.tampaelectric.com/4ad05f/siteassets/files/rates/resratesinsert_jan2026.pdf",
+    "Florida PSC, 'Total Cost for 1,000 kWh - Residential Service', March 2026 (period January-December 2026): https://www.floridapsc.com/pscfiles/website-files/PDF/Utilities/Electricgas/BillingAdjustments/ba_total-2026_oldmar26.pdf",
+    "https://www.tampaelectric.com/company/ourpowersystem/tariff/ (Tariff Section Six, Sheets 6.020-6.025 and 6.030)"
+  ],
+  "notes": [
+    "Basic service charge is $0.45 per day, so the monthly amount depends on days in the billing period (default 30).",
+    "Tier break at 1,000 kWh applies to the energy charge and to fuel; other clauses are flat per kWh.",
+    "Minimum charge is the basic service charge.",
+    "Storm surcharge shown as '-' (none) on sheet 6.024.",
+    "Gross receipts tax factor 2.5641% is stated on sheet 6.023; franchise fees vary by locality and are excluded.",
+    "No seasonal differentiation in schedule RS."
+  ],
+  "customer_charge": {
+    "amount": 0.45,
+    "unit": "per_day"
+  },
+  "tier_break_kwh": 1000,
+  "minimum_base_bill": null,
+  "energy_charges_cents_per_kwh": {
+    "base_energy": {
+      "tier1": 8.948,
+      "tier2": 9.948,
+      "group": "base"
+    },
+    "fuel": {
+      "tier1": 3.21,
+      "tier2": 4.21,
+      "group": "clause"
+    },
+    "conservation": {
+      "tier1": 0.27,
+      "tier2": 0.27,
+      "group": "clause"
+    },
+    "capacity": {
+      "tier1": 0.264,
+      "tier2": 0.264,
+      "group": "clause"
+    },
+    "environmental": {
+      "tier1": 0.087,
+      "tier2": 0.087,
+      "group": "clause"
+    },
+    "storm_protection": {
+      "tier1": 0.717,
+      "tier2": 0.717,
+      "group": "clause"
+    },
+    "clean_energy_transition": {
+      "tier1": 0.406,
+      "tier2": 0.406,
+      "group": "clause"
+    },
+    "storm_surcharge": {
+      "tier1": 1.995,
+      "tier2": 1.995,
+      "group": "clause"
+    }
+  },
+  "jurisdiction": "investor-owned (PSC rate-regulated)",
+  "version": "teco_rs@2026-01",
+  "months_documented": [
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07"
+  ],
+  "months_inferred": [],
+  "version_note": "January insert: storm surcharge 1.995 cents/kWh. The insert says the surcharge runs through August 2026, but tariff Sheet 6.024 effective August 1, 2026 shows none, and the PSC's August table shows $0.00; this version follows the tariff sheet (ends with July)."
+}
