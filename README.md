@@ -1,6 +1,6 @@
 # Residential Rate and Tariff Comparison
 
-Calculates typical monthly residential electric bills from published Florida rate schedules and compares them across utilities and usage levels. Python (standard library only); outputs a CSV for Excel/Power BI and a small HTML table.
+Calculates typical monthly residential electric bills from published Florida rate schedules and compares them across utilities and usage levels. Python (standard library only), with the same calculator as a formula-driven Excel workbook (`excel/tariff_calculator.xlsx`); outputs a CSV for Power BI and a small HTML table.
 
 ## Scope (read this first)
 **8 residential schedules**, retrieved 2026-11-04:
@@ -18,6 +18,7 @@ Calculates typical monthly residential electric bills from published Florida rat
 
 - All four investor-owned utilities are covered. Rates come from tariff sheets and PSC filings; municipal rates come from each utility's own published rate page or sheet. Every data file lists its sources and caveats.
 - **Validation** ([docs/VALIDATION.md](docs/VALIDATION.md)): 8 of 9 checks against independently published bills (Florida PSC's October 2026 1,000 kWh comparison and the Florida Municipal Electric Association's monthly comparison) match to the cent. The ninth, Duke, differs only by the fuel line: the PSC table uses Duke's January-May fuel factor while Duke's tariff sheet effective September 1, 2026 shows a lower one. JEA, Tallahassee and OUC have no independent check yet because the latest FMEA edition predates their fall 2026 rate changes.
+- **Excel**: `excel/tariff_calculator.xlsx` holds the rates as tables and computes every bill with formulas. Change usage, month, billing days, peak kW or the tax option on its Inputs sheet. It matches the Python calculator on all 208 bills compared (`scripts/verify_excel.py`).
 - The calculator has not been checked against actual customer bills.
 - **Power BI view**: `powerbi/TariffComparison.pbip` is a Power BI Project (text-based report and model) with a bill-comparison page and a sources/validation page; see [docs/POWERBI.md](docs/POWERBI.md). Its files validate against Microsoft's schemas and the model is cross-checked by tests, but it has not been opened in Power BI Desktop (Windows-only); manual build steps are included as a fallback. `powerbi/preview.html` is a browser version of the same report for viewing without Power BI (for example on a Mac).
 
@@ -26,6 +27,7 @@ Calculates typical monthly residential electric bills from published Florida rat
 python3 -m unittest discover -s tests -v
 python3 scripts/build_outputs.py   # outputs/bill_comparison.csv and outputs/comparison.html
 python3 scripts/validate.py        # docs/VALIDATION.md
+python3 scripts/build_excel_calculator.py   # excel/tariff_calculator.xlsx (recalculate in Excel or LibreOffice, then: python3 scripts/verify_excel.py)
 python3 scripts/build_powerbi_data.py && python3 scripts/build_powerbi_project.py   # powerbi/ (Power BI Project)
 ```
 The Power BI tests need `pip install jsonschema`.
