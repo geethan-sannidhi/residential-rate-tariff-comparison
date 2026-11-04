@@ -1,0 +1,47 @@
+{
+  "utility": "Florida Public Utilities Company",
+  "schedule": "RS Residential Service",
+  "jurisdiction": "investor-owned (PSC rate-regulated)",
+  "effective": "Settlement Rate Year 2 base rates; 2026 fuel factors",
+  "retrieved": "2026-11-04",
+  "sources": [
+    "https://www.psc.state.fl.us/library/filings/2026/01126-2026/01126-2026.pdf (Docket 20250139-EI settlement rate design, Rate Year 2)",
+    "Order No. PSC-2025-0436-FOF-EI, Table 18-7 (FPUC 2026 fuel factors): https://www.floridapsc.com/pscfiles/library/filings/2025/15230-2025/15230-2025.pdf",
+    "https://www.floridapsc.com/pscfiles/website-files/PDF/Utilities/Electricgas/BillingAdjustments/ba_total-2026.pdf (PSC 'Total Cost for 1,000 kWh - Residential', October 1, 2026)"
+  ],
+  "notes": [
+    "Base energy 2.867 / 4.695 cents/kWh (Rate Year 2); the PSC October 2026 table's $53.07 base charge at 1,000 kWh confirms Year 2 is in effect.",
+    "Fuel and purchased power 8.820 / 10.070 cents/kWh.",
+    "Conservation ($3.21) and storm protection plan ($16.56) per 1,000 kWh are from the PSC October 2026 table and modeled as flat per kWh (0.321 and 1.656 cents); the FMEA 1,200 kWh figure agrees with flat treatment.",
+    "Customer charge rose from $16.95 to $24.40 under the settlement.",
+    "Taxes, franchise fees and other local charges are excluded."
+  ],
+  "customer_charge": {
+    "amount": 24.4,
+    "unit": "per_month"
+  },
+  "tier_break_kwh": 1000,
+  "minimum_base_bill": null,
+  "energy_charges_cents_per_kwh": {
+    "base_energy": {
+      "tier1": 2.867,
+      "tier2": 4.695,
+      "group": "base"
+    },
+    "fuel": {
+      "tier1": 8.82,
+      "tier2": 10.07,
+      "group": "clause"
+    },
+    "conservation": {
+      "tier1": 0.321,
+      "tier2": 0.321,
+      "group": "clause"
+    },
+    "storm_protection": {
+      "tier1": 1.656,
+      "tier2": 1.656,
+      "group": "clause"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "utility": "City of Tallahassee Utilities",
+  "schedule": "Residential Standard Rate Plan (single phase)",
+  "jurisdiction": "municipal (rates set by City Commission; not PSC rate-regulated)",
+  "effective": "Not stated on page; retrieved 2026-11-04",
+  "retrieved": "2026-11-04",
+  "sources": [
+    "https://www.talgov.com/rates"
+  ],
+  "notes": [
+    "No tiers: energy 9.518 cents/kWh and fuel/purchased power (ECRC) 4.065 cents/kWh on all usage.",
+    "The page shows no effective date. FMEA's September 2026 comparison lists a $9.96 customer charge and 9.214 cents energy, so these rates appear to have changed around October 2026.",
+    "Local taxes excluded."
+  ],
+  "customer_charge": {
+    "amount": 10.29,
+    "unit": "per_month"
+  },
+  "tier_break_kwh": 1000,
+  "minimum_base_bill": null,
+  "energy_charges_cents_per_kwh": {
+    "base_energy": {
+      "tier1": 9.518,
+      "tier2": 9.518,
+      "group": "base"
+    },
+    "fuel": {
+      "tier1": 4.065,
+      "tier2": 4.065,
+      "group": "clause"
+    }
+  }
+}

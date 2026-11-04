@@ -1,0 +1,71 @@
+{
+  "utility": "Duke Energy Florida",
+  "schedule": "RS-1 Residential Service",
+  "jurisdiction": "investor-owned (PSC rate-regulated)",
+  "effective": "Base rates and BA-1 factors effective September 1, 2026",
+  "retrieved": "2026-11-04",
+  "sources": [
+    "https://www.psc.state.fl.us/library/FILINGS/2026/03866-2026/03866-2026.pdf (Sheet 6.120, 47th revised, clean version)",
+    "https://www.floridapsc.com/pscfiles/library/filings/2026/04530-2026/04530-2026.pdf (Rate Schedule BA-1, Sheet 6.105, 114th revised; scanned page read visually)",
+    "https://www.floridapsc.com/pscfiles/website-files/PDF/Utilities/Electricgas/BillingAdjustments/ba_total-2026.pdf (PSC 'Total Cost for 1,000 kWh - Residential', October 1, 2026)"
+  ],
+  "notes": [
+    "Seasonal base energy: December-February ('winter') rates differ from March-November.",
+    "Clause factors from BA-1 Sheet 6.105: ECCR 0.386, CCR 0.133, ECRC 0.040, ASC 0.238, SPPCRC 0.936; SCRS shown as '-'.",
+    "Fuel 3.465 / 4.535 cents/kWh from Sheet 6.105 effective Sept 1, 2026. The PSC's October 1, 2026 summary table shows Duke fuel at $41.27 per 1,000 kWh, which equals Duke's Jan-May 2026 factor; this tool follows the tariff sheet. Open discrepancy.",
+    "Sheet 6.105 is page 1 of 3; pages 2-3 were not retrieved.",
+    "Taxes, franchise fees and other local charges are excluded."
+  ],
+  "customer_charge": {
+    "amount": 14.43,
+    "unit": "per_month"
+  },
+  "tier_break_kwh": 1000,
+  "minimum_base_bill": null,
+  "winter_months": [
+    12,
+    1,
+    2
+  ],
+  "energy_charges_cents_per_kwh": {
+    "base_energy": {
+      "tier1": 7.731,
+      "tier2": 8.503,
+      "winter": {
+        "tier1": 8.805,
+        "tier2": 10.302
+      },
+      "group": "base"
+    },
+    "fuel": {
+      "tier1": 3.465,
+      "tier2": 4.535,
+      "group": "clause"
+    },
+    "conservation": {
+      "tier1": 0.386,
+      "tier2": 0.386,
+      "group": "clause"
+    },
+    "capacity": {
+      "tier1": 0.133,
+      "tier2": 0.133,
+      "group": "clause"
+    },
+    "environmental": {
+      "tier1": 0.04,
+      "tier2": 0.04,
+      "group": "clause"
+    },
+    "asset_securitization": {
+      "tier1": 0.238,
+      "tier2": 0.238,
+      "group": "clause"
+    },
+    "storm_protection": {
+      "tier1": 0.936,
+      "tier2": 0.936,
+      "group": "clause"
+    }
+  }
+}

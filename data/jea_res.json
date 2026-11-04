@@ -1,0 +1,32 @@
+{
+  "utility": "JEA (Jacksonville)",
+  "schedule": "Residential Electric",
+  "jurisdiction": "municipal (rates set by JEA board; not PSC rate-regulated)",
+  "effective": "October 1, 2026 (fuel: November 2026)",
+  "retrieved": "2026-11-04",
+  "sources": [
+    "https://www.jea.com/My_Account/Rates/"
+  ],
+  "notes": [
+    "Fuel rate changes monthly; $0.04975/kWh is November 2026 ($49.75 per 1,000 kWh on JEA's fuel history table).",
+    "Local franchise fees, gross receipts and public service taxes vary by city/county and are excluded."
+  ],
+  "customer_charge": {
+    "amount": 21.0,
+    "unit": "per_month"
+  },
+  "tier_break_kwh": 1000,
+  "minimum_base_bill": null,
+  "energy_charges_cents_per_kwh": {
+    "base_energy": {
+      "tier1": 7.815,
+      "tier2": 9.705,
+      "group": "base"
+    },
+    "fuel": {
+      "tier1": 4.975,
+      "tier2": 4.975,
+      "group": "clause"
+    }
+  }
+}

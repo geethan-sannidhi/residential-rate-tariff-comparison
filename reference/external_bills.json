@@ -1,0 +1,21 @@
+{
+  "_about": "Independent published residential bills used to check the calculator. Pre-tax = the source's total minus its gross-receipts-tax/regulatory-fee line. FMEA totals exclude franchise fees in the column used.",
+  "sources": {
+    "PSC_OCT_2026": "Florida PSC, 'Florida Investor-Owned Electric Utilities Total Cost for 1,000 Kilowatt Hours - Residential Service', October 1, 2026. https://www.floridapsc.com/pscfiles/website-files/PDF/Utilities/Electricgas/BillingAdjustments/ba_total-2026.pdf",
+    "FMEA_MAY_2026": "Florida Municipal Electric Association, Electric Bill Comparison, May 2026. https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_May_Rates.pdf",
+    "FMEA_SEP_2026": "Florida Municipal Electric Association, Electric Bill Comparison, September 2026. https://assets.noviams.com/novi-file-uploads/fmea/Rates/2026/2026_September_Rates.pdf"
+  },
+  "checks": [
+    {"tariff": "fpl_rs1",      "kwh": 1000, "expected": 133.10, "source": "PSC_OCT_2026", "note": "136.64 total - 3.54 GRT/RAF"},
+    {"tariff": "fpl_rs1",      "kwh": 1200, "expected": 161.62, "source": "FMEA_MAY_2026", "note": "FPL rates in May equal October rates per both sources' 1,000 kWh totals"},
+    {"tariff": "fpl_nwfl_rs1", "kwh": 1000, "expected": 137.71, "source": "PSC_OCT_2026", "note": "141.36 - 3.65"},
+    {"tariff": "fpl_nwfl_rs1", "kwh": 1200, "expected": 167.15, "source": "FMEA_MAY_2026", "note": "confirms the flat per-kWh transition rider"},
+    {"tariff": "teco_rs",      "kwh": 1000, "expected": 152.52, "source": "PSC_OCT_2026", "note": "156.43 - 3.91"},
+    {"tariff": "teco_rs",      "kwh": 1200, "expected": 184.32, "source": "FMEA_SEP_2026", "note": ""},
+    {"tariff": "fpuc_rs",      "kwh": 1000, "expected": 161.04, "source": "PSC_OCT_2026", "note": "165.17 - 4.13"},
+    {"tariff": "fpuc_rs",      "kwh": 1200, "expected": 194.52, "source": "FMEA_SEP_2026", "note": ""},
+    {"tariff": "duke_rs1",     "kwh": 1000, "expected": 153.03, "source": "PSC_OCT_2026", "annual_average": true,
+     "known_difference": "PSC table uses fuel of $41.27/1,000 kWh (Duke's Jan-May 2026 factor); Duke's Sheet 6.105 effective Sept 1, 2026 shows 3.465 cents ($34.65). All non-fuel components match.",
+     "note": "157.09 - 4.06; PSC annualizes Duke's seasonal base (3 winter months)"}
+  ]
+}

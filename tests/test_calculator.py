@@ -57,9 +57,11 @@ class General(unittest.TestCase):
             monthly_bill(FPL, -1)
 
     def test_bill_monotonic_in_usage(self):
-        for t in (FPL, TECO):
-            totals = [monthly_bill(t, k).total for k in range(0, 3001, 50)]
-            self.assertEqual(totals, sorted(totals))
+        from tariffcalc import load_all
+        for t in load_all():
+            for month in ((1, 7) if t.seasonal else (None,)):
+                totals = [monthly_bill(t, k, month=month).total for k in range(0, 3001, 50)]
+                self.assertEqual(totals, sorted(totals), t.key)
 
 
 if __name__ == "__main__":
