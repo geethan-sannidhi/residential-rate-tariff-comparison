@@ -1,0 +1,81 @@
+table Utilities
+	lineageTag: 5f0467a6-49d8-51e0-80ee-a29199e58560
+
+	column tariff_key
+		dataType: string
+		isHidden
+		lineageTag: f5711731-a62e-57f6-ad7b-4d489efe4277
+		summarizeBy: none
+		sourceColumn: tariff_key
+
+	column utility
+		dataType: string
+		lineageTag: cadac80e-f87d-56da-b709-b76fd7b8a29f
+		summarizeBy: none
+		sourceColumn: utility
+
+	column short_name
+		dataType: string
+		lineageTag: 41dc764a-767a-51ef-a9b1-251f93c0d9a4
+		summarizeBy: none
+		sourceColumn: short_name
+
+	column schedule
+		dataType: string
+		lineageTag: 01b31867-134d-50ed-8e71-5a158e0da52c
+		summarizeBy: none
+		sourceColumn: schedule
+
+	column type
+		dataType: string
+		lineageTag: 6dec894f-6bf9-573d-97d2-596cf852a113
+		summarizeBy: none
+		sourceColumn: type
+
+	column jurisdiction
+		dataType: string
+		lineageTag: 7e5b1db2-0726-5ae6-9c87-45c4cb6dda6f
+		summarizeBy: none
+		sourceColumn: jurisdiction
+
+	column effective
+		dataType: string
+		lineageTag: 7e7385f8-4b2d-5203-bc0f-4a9e0299f598
+		summarizeBy: none
+		sourceColumn: effective
+
+	column seasonal
+		dataType: boolean
+		lineageTag: 4f5a9338-a6a1-5116-a273-3b901ef3607b
+		summarizeBy: none
+		sourceColumn: seasonal
+
+	column demand_level_charge
+		dataType: boolean
+		lineageTag: fbe9f681-d284-5d47-874a-25b282cf96a5
+		summarizeBy: none
+		sourceColumn: demand_level_charge
+
+	column tiered
+		dataType: boolean
+		lineageTag: e4ff2644-58fa-5250-b636-10023ad287c9
+		summarizeBy: none
+		sourceColumn: tiered
+
+	column source_1
+		dataType: string
+		lineageTag: 3c4cd9ee-5df0-5fc4-aa6e-149f6492a141
+		summarizeBy: none
+		sourceColumn: source_1
+
+	partition Utilities = m
+		mode: import
+		source =
+				let
+				    Raw = if Text.StartsWith(DataLocation, "http") then Web.Contents(DataLocation & "utilities.csv") else File.Contents(DataLocation & "utilities.csv"),
+				    Source = Csv.Document(Raw, [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"tariff_key", type text}, {"utility", type text}, {"short_name", type text}, {"schedule", type text}, {"type", type text}, {"jurisdiction", type text}, {"effective", type text}, {"seasonal", type logical}, {"demand_level_charge", type logical}, {"tiered", type logical}, {"source_1", type text}}, "en-US")
+				in
+				    Typed
+

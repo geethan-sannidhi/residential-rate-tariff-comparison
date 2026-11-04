@@ -1,0 +1,58 @@
+table Components
+	lineageTag: 9c3e92d6-e71a-5054-95c3-7e68aa0526de
+
+	/// Average monthly dollars for each bill component at the selected usage.
+	measure 'Component at Selected Usage' =
+			VAR k = [Selected kWh]
+			RETURN
+			    DIVIDE (
+			        CALCULATE ( SUM ( Components[amount] ), Components[kwh] = k ),
+			        CALCULATE ( DISTINCTCOUNT ( Components[month] ), Components[kwh] = k )
+			    )
+		formatString: \$#,0.00
+		lineageTag: 92226c4a-088e-5f12-ab69-2ac7043c383d
+
+	column tariff_key
+		dataType: string
+		isHidden
+		lineageTag: 8ca2bd5b-54df-5f24-879c-e9a1da81dd73
+		summarizeBy: none
+		sourceColumn: tariff_key
+
+	column kwh
+		dataType: int64
+		isHidden
+		lineageTag: 5d9988ff-4e12-5c95-9d1c-dd69d45ef22f
+		summarizeBy: none
+		sourceColumn: kwh
+
+	column month
+		dataType: int64
+		isHidden
+		lineageTag: 98f2226a-7ccc-5efc-9d9e-bc046611fc33
+		summarizeBy: none
+		sourceColumn: month
+
+	column component
+		dataType: string
+		lineageTag: 68cc1241-2cc5-5ecc-b967-fe93a00e703d
+		summarizeBy: none
+		sourceColumn: component
+
+	column amount
+		dataType: double
+		lineageTag: a7dabff3-fe32-5d3a-818b-46e1d59a04ea
+		summarizeBy: none
+		sourceColumn: amount
+
+	partition Components = m
+		mode: import
+		source =
+				let
+				    Raw = if Text.StartsWith(DataLocation, "http") then Web.Contents(DataLocation & "components.csv") else File.Contents(DataLocation & "components.csv"),
+				    Source = Csv.Document(Raw, [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"tariff_key", type text}, {"kwh", Int64.Type}, {"month", Int64.Type}, {"component", type text}, {"amount", type number}}, "en-US")
+				in
+				    Typed
+

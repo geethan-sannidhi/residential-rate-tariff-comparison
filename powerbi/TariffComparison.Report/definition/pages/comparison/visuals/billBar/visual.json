@@ -1,0 +1,98 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.0.0/schema.json",
+  "name": "billBar",
+  "position": {
+    "x": 16,
+    "y": 100,
+    "z": 4,
+    "width": 600,
+    "height": 300,
+    "tabOrder": 4
+  },
+  "visual": {
+    "visualType": "clusteredBarChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Utilities"
+                    }
+                  },
+                  "Property": "short_name"
+                }
+              },
+              "queryRef": "Utilities.short_name",
+              "nativeQueryRef": "short_name",
+              "displayName": "Utility"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Bills"
+                    }
+                  },
+                  "Property": "Bill at Selected Usage"
+                }
+              },
+              "queryRef": "Bills.Bill at Selected Usage",
+              "nativeQueryRef": "Bill at Selected Usage",
+              "displayName": "Monthly bill"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Bills"
+                  }
+                },
+                "Property": "Bill at Selected Usage"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": false
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Monthly bill at the selected usage (before taxes and fees)'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.0.0/schema.json",
+  "name": "validationTable",
+  "position": {
+    "x": 16,
+    "y": 362,
+    "z": 2,
+    "width": 1248,
+    "height": 342,
+    "tabOrder": 2
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Utilities"
+                    }
+                  },
+                  "Property": "short_name"
+                }
+              },
+              "queryRef": "Utilities.short_name",
+              "nativeQueryRef": "short_name",
+              "displayName": "Utility"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Validation"
+                    }
+                  },
+                  "Property": "kwh"
+                }
+              },
+              "queryRef": "Validation.kwh",
+              "nativeQueryRef": "kwh",
+              "displayName": "kWh"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Validation"
+                    }
+                  },
+                  "Property": "calculator"
+                }
+              },
+              "queryRef": "Validation.calculator",
+              "nativeQueryRef": "calculator",
+              "displayName": "Calculator"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Validation"
+                    }
+                  },
+                  "Property": "published"
+                }
+              },
+              "queryRef": "Validation.published",
+              "nativeQueryRef": "published",
+              "displayName": "Published"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Validation"
+                    }
+                  },
+                  "Property": "difference"
+                }
+              },
+              "queryRef": "Validation.difference",
+              "nativeQueryRef": "difference",
+              "displayName": "Difference"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Validation"
+                    }
+                  },
+                  "Property": "source"
+                }
+              },
+              "queryRef": "Validation.source",
+              "nativeQueryRef": "source",
+              "displayName": "Source"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Validation"
+                    }
+                  },
+                  "Property": "note"
+                }
+              },
+              "queryRef": "Validation.note",
+              "nativeQueryRef": "note",
+              "displayName": "Note"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Calculator vs. independently published bills (PSC and FMEA)'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

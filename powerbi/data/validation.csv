@@ -1,0 +1,10 @@
+tariff_key,kwh,calculator,published,difference,source,note
+fpl_rs1,1000,133.1,133.1,0.0,PSC_OCT_2026,136.64 total - 3.54 GRT/RAF
+fpl_rs1,1200,161.62,161.62,0.0,FMEA_MAY_2026,"FPL rates in May equal October rates per both sources' 1,000 kWh totals"
+fpl_nwfl_rs1,1000,137.71,137.71,0.0,PSC_OCT_2026,141.36 - 3.65
+fpl_nwfl_rs1,1200,167.15,167.15,0.0,FMEA_MAY_2026,confirms the flat per-kWh transition rider
+teco_rs,1000,152.52,152.52,0.0,PSC_OCT_2026,156.43 - 3.91
+teco_rs,1200,184.32,184.32,0.0,FMEA_SEP_2026,
+fpuc_rs,1000,161.04,161.04,0.0,PSC_OCT_2026,165.17 - 4.13
+fpuc_rs,1200,194.52,194.52,0.0,FMEA_SEP_2026,
+duke_rs1,1000,146.41,153.03,-6.62,PSC_OCT_2026,"PSC table uses fuel of $41.27/1,000 kWh (Duke's Jan-May 2026 factor); Duke's Sheet 6.105 effective Sept 1, 2026 shows 3.465 cents ($34.65). All non-fuel components match."

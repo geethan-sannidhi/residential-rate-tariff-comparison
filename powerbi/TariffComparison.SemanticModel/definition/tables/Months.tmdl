@@ -1,0 +1,33 @@
+table Months
+	lineageTag: 3b4fd82f-a41c-597a-9bfa-b737451f128e
+
+	column month
+		dataType: int64
+		isHidden
+		lineageTag: 4e0cae81-8689-5f71-831f-6b3121bc4f8f
+		summarizeBy: none
+		sourceColumn: month
+
+	column month_name
+		dataType: string
+		lineageTag: 2dbc5a5f-52a0-50cd-85ff-4d733d54849b
+		summarizeBy: none
+		sourceColumn: month_name
+		sortByColumn: month
+
+	column season
+		dataType: string
+		lineageTag: 6c73dbfa-46ff-5a0f-b3d0-0b6197fd7289
+		summarizeBy: none
+		sourceColumn: season
+
+	partition Months = m
+		mode: import
+		source =
+				let
+				    Names = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"},
+				    Rows = List.Transform({1..12}, each {_, Names{_ - 1}, if List.Contains({12, 1, 2}, _) then "Winter (Dec-Feb)" else "Mar-Nov"}),
+				    Result = #table(type table [month = Int64.Type, month_name = text, season = text], Rows)
+				in
+				    Result
+

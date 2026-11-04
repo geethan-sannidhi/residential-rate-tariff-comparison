@@ -1,0 +1,16 @@
+{
+  "name": "Tariff comparison",
+  "dataColors": [
+    "#2a78d6",
+    "#eb6834",
+    "#1baf7a",
+    "#eda100",
+    "#e87ba4",
+    "#008300",
+    "#6250d6",
+    "#e34948"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#0B0B0B",
+  "tableAccent": "#2a78d6"
+}

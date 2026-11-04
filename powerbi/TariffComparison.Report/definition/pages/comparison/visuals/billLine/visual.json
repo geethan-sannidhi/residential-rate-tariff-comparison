@@ -1,0 +1,99 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.0.0/schema.json",
+  "name": "billLine",
+  "position": {
+    "x": 16,
+    "y": 412,
+    "z": 6,
+    "width": 600,
+    "height": 292,
+    "tabOrder": 6
+  },
+  "visual": {
+    "visualType": "lineChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Bills"
+                    }
+                  },
+                  "Property": "kwh"
+                }
+              },
+              "queryRef": "Bills.kwh",
+              "nativeQueryRef": "kwh",
+              "displayName": "Monthly usage (kWh)"
+            }
+          ]
+        },
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Utilities"
+                    }
+                  },
+                  "Property": "short_name"
+                }
+              },
+              "queryRef": "Utilities.short_name",
+              "nativeQueryRef": "short_name",
+              "displayName": "Utility"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Bills"
+                    }
+                  },
+                  "Property": "Monthly Bill"
+                }
+              },
+              "queryRef": "Bills.Monthly Bill",
+              "nativeQueryRef": "Monthly Bill",
+              "displayName": "Monthly bill"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Monthly bill by usage, 0-3,000 kWh'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

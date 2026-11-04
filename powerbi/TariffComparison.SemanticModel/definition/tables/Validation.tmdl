@@ -1,0 +1,61 @@
+table Validation
+	lineageTag: aa44fb24-64a7-565a-a967-528ebc80c6bc
+
+	column tariff_key
+		dataType: string
+		isHidden
+		lineageTag: 0df9a90b-6e34-55fa-ad5e-ccc583ca0415
+		summarizeBy: none
+		sourceColumn: tariff_key
+
+	column kwh
+		dataType: int64
+		formatString: #,0
+		lineageTag: b5b07ddd-dff3-550e-9552-f3bd5670e4fa
+		summarizeBy: none
+		sourceColumn: kwh
+
+	column calculator
+		dataType: double
+		formatString: \$#,0.00
+		lineageTag: 993382e6-3207-5bbc-b45f-a0bca765540d
+		summarizeBy: none
+		sourceColumn: calculator
+
+	column published
+		dataType: double
+		formatString: \$#,0.00
+		lineageTag: 030e8dcb-b1d1-5477-95d4-30d2c5e88114
+		summarizeBy: none
+		sourceColumn: published
+
+	column difference
+		dataType: double
+		formatString: \$#,0.00
+		lineageTag: 448c9407-d297-5eff-b33b-f3752e542f92
+		summarizeBy: none
+		sourceColumn: difference
+
+	column source
+		dataType: string
+		lineageTag: 317e4252-c46e-58cd-9dc3-889e4266c23e
+		summarizeBy: none
+		sourceColumn: source
+
+	column note
+		dataType: string
+		lineageTag: beb63d4c-0dbb-5414-9cff-2d7211bf8c3f
+		summarizeBy: none
+		sourceColumn: note
+
+	partition Validation = m
+		mode: import
+		source =
+				let
+				    Raw = if Text.StartsWith(DataLocation, "http") then Web.Contents(DataLocation & "validation.csv") else File.Contents(DataLocation & "validation.csv"),
+				    Source = Csv.Document(Raw, [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"tariff_key", type text}, {"kwh", Int64.Type}, {"calculator", type number}, {"published", type number}, {"difference", type number}, {"source", type text}, {"note", type text}}, "en-US")
+				in
+				    Typed
+

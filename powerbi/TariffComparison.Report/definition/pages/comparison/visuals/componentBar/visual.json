@@ -1,0 +1,99 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.0.0/schema.json",
+  "name": "componentBar",
+  "position": {
+    "x": 632,
+    "y": 100,
+    "z": 5,
+    "width": 632,
+    "height": 300,
+    "tabOrder": 5
+  },
+  "visual": {
+    "visualType": "barChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Utilities"
+                    }
+                  },
+                  "Property": "short_name"
+                }
+              },
+              "queryRef": "Utilities.short_name",
+              "nativeQueryRef": "short_name",
+              "displayName": "Utility"
+            }
+          ]
+        },
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Components"
+                    }
+                  },
+                  "Property": "component"
+                }
+              },
+              "queryRef": "Components.component",
+              "nativeQueryRef": "component",
+              "displayName": "Component"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Components"
+                    }
+                  },
+                  "Property": "Component at Selected Usage"
+                }
+              },
+              "queryRef": "Components.Component at Selected Usage",
+              "nativeQueryRef": "Component at Selected Usage",
+              "displayName": "Dollars per month"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'What makes up the bill at the selected usage'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

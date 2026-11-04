@@ -1,0 +1,19 @@
+relationship e035cbcc-ce06-5d89-9058-506881f8ff0d
+	fromColumn: Bills.tariff_key
+	toColumn: Utilities.tariff_key
+
+relationship b6833483-a16b-5d9b-a992-2a47e650b336
+	fromColumn: Components.tariff_key
+	toColumn: Utilities.tariff_key
+
+relationship d5666995-ae1d-5796-b611-d1da57435229
+	fromColumn: Validation.tariff_key
+	toColumn: Utilities.tariff_key
+
+relationship 6b62ca4e-539e-54fa-b8a0-711d018f4a24
+	fromColumn: Bills.month
+	toColumn: Months.month
+
+relationship f5fde048-ce7a-5a73-9874-6113cfcb8097
+	fromColumn: Components.month
+	toColumn: Months.month

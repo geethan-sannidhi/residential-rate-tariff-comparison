@@ -1,0 +1,18 @@
+table 'Usage Level'
+	lineageTag: 58069857-88c1-553c-b98a-70291b8d0a1f
+
+	column kWh
+		dataType: int64
+		formatString: #,0
+		lineageTag: 01405fcb-8c72-5807-b855-76a8877e1e61
+		summarizeBy: none
+		sourceColumn: kWh
+
+	partition 'Usage Level' = m
+		mode: import
+		source =
+				let
+				    Result = #table(type table [kWh = Int64.Type], List.Transform({0..60}, each {_ * 50}))
+				in
+				    Result
+

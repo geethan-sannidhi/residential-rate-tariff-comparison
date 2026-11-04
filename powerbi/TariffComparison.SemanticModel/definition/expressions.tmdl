@@ -1,0 +1,4 @@
+expression DataLocation = "https://raw.githubusercontent.com/geethan-sannidhi/residential-rate-tariff-comparison/main/powerbi/data/" meta [IsParameterQuery = true, Type = "Text", IsParameterQueryRequired = true]
+	lineageTag: 90565680-1edf-5474-8178-9a6ac67dd130
+
+	annotation PBI_ResultType = Text

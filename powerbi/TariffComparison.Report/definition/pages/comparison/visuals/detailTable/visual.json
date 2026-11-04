@@ -1,0 +1,169 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.0.0/schema.json",
+  "name": "detailTable",
+  "position": {
+    "x": 632,
+    "y": 412,
+    "z": 7,
+    "width": 632,
+    "height": 292,
+    "tabOrder": 7
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Utilities"
+                    }
+                  },
+                  "Property": "utility"
+                }
+              },
+              "queryRef": "Utilities.utility",
+              "nativeQueryRef": "utility",
+              "displayName": "Utility"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Utilities"
+                    }
+                  },
+                  "Property": "type"
+                }
+              },
+              "queryRef": "Utilities.type",
+              "nativeQueryRef": "type",
+              "displayName": "Type"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Bills"
+                    }
+                  },
+                  "Property": "Bill at Selected Usage"
+                }
+              },
+              "queryRef": "Bills.Bill at Selected Usage",
+              "nativeQueryRef": "Bill at Selected Usage",
+              "displayName": "Bill"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Bills"
+                    }
+                  },
+                  "Property": "Cents per kWh at Selected Usage"
+                }
+              },
+              "queryRef": "Bills.Cents per kWh at Selected Usage",
+              "nativeQueryRef": "Cents per kWh at Selected Usage",
+              "displayName": "Cents/kWh"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Bills"
+                    }
+                  },
+                  "Property": "Difference vs Lowest"
+                }
+              },
+              "queryRef": "Bills.Difference vs Lowest",
+              "nativeQueryRef": "Difference vs Lowest",
+              "displayName": "vs. lowest"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Bills"
+                    }
+                  },
+                  "Property": "Fuel Share at Selected Usage"
+                }
+              },
+              "queryRef": "Bills.Fuel Share at Selected Usage",
+              "nativeQueryRef": "Fuel Share at Selected Usage",
+              "displayName": "Fuel share"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Utilities"
+                    }
+                  },
+                  "Property": "effective"
+                }
+              },
+              "queryRef": "Utilities.effective",
+              "nativeQueryRef": "effective",
+              "displayName": "Rates effective"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Bills"
+                  }
+                },
+                "Property": "Bill at Selected Usage"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": false
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Detail at the selected usage'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -19,14 +19,16 @@ Calculates typical monthly residential electric bills from published Florida rat
 - All four investor-owned utilities are covered. Rates come from tariff sheets and PSC filings; municipal rates come from each utility's own published rate page or sheet. Every data file lists its sources and caveats.
 - **Validation** ([docs/VALIDATION.md](docs/VALIDATION.md)): 8 of 9 checks against independently published bills (Florida PSC's October 2026 1,000 kWh comparison and the Florida Municipal Electric Association's monthly comparison) match to the cent. The ninth, Duke, differs only by the fuel line: the PSC table uses Duke's January-May fuel factor while Duke's tariff sheet effective September 1, 2026 shows a lower one. JEA, Tallahassee and OUC have no independent check yet because the latest FMEA edition predates their fall 2026 rate changes.
 - The calculator has not been checked against actual customer bills.
-- No Power BI `.pbix` is included; `outputs/bill_comparison.csv` is shaped for loading into Power BI.
+- **Power BI view**: `powerbi/TariffComparison.pbip` is a Power BI Project (text-based report and model) with a bill-comparison page and a sources/validation page; see [docs/POWERBI.md](docs/POWERBI.md). Its files validate against Microsoft's schemas and the model is cross-checked by tests, but it has not been opened in Power BI Desktop (Windows-only); manual build steps are included as a fallback.
 
 ## Usage
 ```bash
 python3 -m unittest discover -s tests -v
 python3 scripts/build_outputs.py   # outputs/bill_comparison.csv and outputs/comparison.html
 python3 scripts/validate.py        # docs/VALIDATION.md
+python3 scripts/build_powerbi_data.py && python3 scripts/build_powerbi_project.py   # powerbi/ (Power BI Project)
 ```
+The Power BI tests need `pip install jsonschema`.
 
 ```python
 from tariffcalc import load_tariff, monthly_bill, annual_average_bill
@@ -44,3 +46,4 @@ monthly_bill(ouc, 1000, peak_kw=9).total    # demand-level Tier 2
 - `reference/external_bills.json` - published bills used for validation
 - `tests/` - hand-computed bills and the external checks
 - `docs/METHODOLOGY.md` - assumptions and limits; `docs/VALIDATION.md` - check results
+- `powerbi/` - Power BI Project and the CSVs it loads; `reference/powerbi-schemas/` - Microsoft's schemas used to validate it
