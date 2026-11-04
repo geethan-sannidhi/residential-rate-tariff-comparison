@@ -1,3 +1,8 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Florida Bill Comparison</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <style>
@@ -102,6 +107,8 @@ td.lowest { font-weight: 600; }
 @media (max-width: 860px) { .grid { grid-template-columns: minmax(0, 1fr); } .slicer { max-width: none; } }
 @media (prefers-reduced-motion: no-preference) { .bar { transition: width .2s ease; } }
 </style>
+</head>
+<body>
 
 <div class="wrap">
   <div class="banner"><b>HTML preview of the Power BI report.</b> Built from the same data, pages, slicers and formulas as <code>powerbi/TariffComparison.pbip</code>, so it can be viewed without Power BI Desktop. It is not rendered by Power BI.</div>
@@ -341,3 +348,6 @@ let rt; window.addEventListener("resize", () => { clearTimeout(rt); rt = setTime
 drawSources();
 showPage(location.hash.slice(1));
 </script>
+
+</body>
+</html>

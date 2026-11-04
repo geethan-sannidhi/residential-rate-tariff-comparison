@@ -4,6 +4,7 @@ and the same measure logic as the DAX in docs/POWERBI.md. It is an HTML page, no
 """
 import csv
 import json
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -37,5 +38,13 @@ data = {
 
 TEMPLATE = (ROOT / "scripts" / "preview_template.html").read_text()
 out = TEMPLATE.replace("/*__DATA__*/null", json.dumps(data, separators=(",", ":")))
-(ROOT / "powerbi" / "preview.html").write_text(out)
-print(f"wrote powerbi/preview.html ({len(out) / 1024:.0f} KB)")
+# Standalone page (GitHub Pages, or double-click locally): needs its own doctype, charset and viewport.
+standalone = ('<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
+              '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
+              + out.replace("</style>", "</style>\n</head>\n<body>", 1) + "\n</body>\n</html>\n")
+(ROOT / "powerbi" / "preview.html").write_text(standalone)
+print(f"wrote powerbi/preview.html ({len(standalone) / 1024:.0f} KB)")
+# Fragment for hosts that supply their own document skeleton (e.g. the claude.ai artifact).
+if len(sys.argv) > 1:
+    Path(sys.argv[1]).write_text(out)
+    print(f"wrote fragment to {sys.argv[1]}")
