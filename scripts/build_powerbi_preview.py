@@ -39,7 +39,10 @@ data = {
 TEMPLATE = (ROOT / "scripts" / "preview_template.html").read_text()
 out = TEMPLATE.replace("/*__DATA__*/null", json.dumps(data, separators=(",", ":")))
 # Standalone page (GitHub Pages, or double-click locally): needs its own doctype, charset and viewport.
-standalone = ('<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
+LIVE_URL = "https://geethan-sannidhi.github.io/residential-rate-tariff-comparison/powerbi/preview.html"
+standalone = ('<!doctype html>\n'
+              f'<!-- View it in your browser via {LIVE_URL} -->\n'
+              '<html lang="en">\n<head>\n<meta charset="utf-8">\n'
               '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
               + out.replace("</style>", "</style>\n</head>\n<body>", 1) + "\n</body>\n</html>\n")
 (ROOT / "powerbi" / "preview.html").write_text(standalone)
