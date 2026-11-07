@@ -2,6 +2,10 @@
 
 Calculates typical monthly residential electric bills from published Florida rate schedules and compares them across utilities and usage levels. Python (standard library only), with the same calculator as a formula-driven Excel workbook (`excel/tariff_calculator.xlsx`); outputs a CSV for Power BI and a small HTML table.
 
+## How this was built
+
+This project was built with **Claude**, Anthropic's AI assistant, in November 2026. I chose the questions and the scope, and directed the work. Claude found and retrieved the public filings, wrote the code, built the Excel workbook, Power BI project and browser preview, drafted the documents, and ran the checks. Every figure traces to a cited public filing, and the automated tests check the results against those filings and against independently published numbers. I'm happy to walk through any part of the method or the findings.
+
 ## Scope (read this first)
 **8 residential schedules**, retrieved 2026-11-04:
 
